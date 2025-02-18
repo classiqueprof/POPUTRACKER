@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 1440px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", serif;
+}
+
+.language-bar {
+  background-color: #366e47;
+  padding: 0.5rem 0;
+  width: 100%;
+  height: 5rem; /* Adjusted for consistency */
+}
+
+.language-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 2rem;
+}
+
+.fa-chevron-down {
+  color: black;
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: black;
+  text-decoration: none;
+  font-size: 1.4rem;
+  background-color: white;
+  padding: 0.9rem 1.2rem;
+  border-radius: 0.8rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #2a4632b2;
+  height: 7rem;
+  padding: 0 2rem;
+  position: relative; /* Keep relative positioning for other elements */
+}
+
+.nav-image img {
+  width: 101px;
+  height: 31px;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listed a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin: 0 1.5rem;
+  color: white;
+}
+
+.listed1 a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin: 0 1.5rem;
+  color: white;
+  border-bottom: 0.5rem solid #f77b09;
+  border-radius: 0.6rem;
+}
+
+.listed2 a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin: 0 1.5rem;
+  color: #f77b09;
+  border: 0.1rem solid #f77b09;
+  padding: 0.7rem 2rem;
+  border-radius: 0.8rem;
+}
+
+.listed3 a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin: 0 1.5rem;
+  background-color: #f77b09;
+  color: white;
+  border: 0.1rem solid #f77b09;
+  padding: 0.7rem 2rem;
+  border-radius: 0.8rem;
+}
+
+.about {
+  font-size: 5.4rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 1.6rem;
+}
+
+.gov,
+.age {
+  display: block;
+}
+
+.innovate {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.man {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.nav-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px; /* Or adjust as needed */
+  z-index: -1; /* Keep it behind the navbar */
+}
+
+.nav-background img {
+  width: 1370px;
+  /* object-fit: cover; */
+}
+
+.hero {
+  /* REMOVE background-image, background-position, background-size, background-repeat */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.man {
+  margin-top: 6rem;
+}
+
+.pin,
+.gen {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.pin a {
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  border: 0.5px solid white;
+  padding: 1.2rem 8.2rem;
+  border-radius: 0.8rem;
+}
+
+.gen a {
+  text-decoration: none;
+  color: white;
+  background-color: #f77b09;
+  border: 0.5px solid white;
+  padding: 1.2rem 6.5rem;
+  border-radius: 0.8rem;
+}
+
+.pen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+  margin-top: 3.2rem;
+}
