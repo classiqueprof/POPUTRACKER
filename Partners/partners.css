@@ -1,6 +1,3 @@
-/* the other fonts are:  font-family: "Lato", serif;
-and  font-family: "Inter", serif; */
-
 * {
   padding: 0;
   margin: 0;
@@ -76,6 +73,11 @@ nav {
   color: white;
 }
 
+.listed a:hover {
+  border-bottom: 0.5rem solid #f77b09;
+  border-radius: 0.6rem;
+}
+
 .listed1 a {
   text-decoration: none;
   font-size: 1.6rem;
@@ -136,6 +138,7 @@ nav {
 .man {
   text-align: center;
   padding-top: 5rem;
+  margin-top: 5rem;
 }
 
 .nav-background {
@@ -161,195 +164,195 @@ nav {
   justify-content: center;
 }
 
-.man {
-  margin-top: 6rem;
+.ships {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #f77b09;
+  margin-bottom: 1.2rem;
 }
 
-.stand {
-  margin-top: 20rem;
+.track {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 6.4rem;
+  color: #999999;
+}
+
+.rate {
+  display: block;
+}
+
+.rent {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #366e47;
+  margin-bottom: 2.4rem;
+}
+
+.proud {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #999999;
+  margin-bottom: 1.6rem;
+}
+
+.network {
+  color: #999999;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.network a {
+  color: #f77b09;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tune {
+  color: #366e47;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+.data,
+.join,
+.event,
+.tech {
+  color: #366e47;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.share,
+.team,
+.host,
+.visual {
+  color: #999999;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 2.4rem;
 }
 
 .for {
-  color: #f77b09;
-  font-size: 2.4rem;
-  font-weight: 500;
-  margin-bottom: 0.8rem;
-}
-
-.cate {
-  font-size: 4rem;
-  font-weight: 700;
-  color: #366e47;
-}
-
-.accurate {
   display: block;
 }
 
-.huge {
-  color: #366e47;
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin-bottom: 0.8rem;
-}
-
-.tracker {
-  color: #999999;
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.collab {
-  display: block;
-}
-
-.race {
+.ship {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 6.4rem;
+  padding-top: 8rem;
+  margin-bottom: 9rem;
 }
 
-.ion {
-  font-size: 2.4rem;
-  font-weight: 600;
-  color: #f77b09;
-  margin-bottom: 0.8rem;
-}
-
-.real {
-  font-size: 2.4rem;
-  font-weight: 700;
+.us {
   color: #366e47;
-  margin-bottom: 1.6rem;
-}
-
-.nate {
-  color: #999999;
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.lation {
-  display: block;
-}
-
-.vision {
-  color: #f77b09;
-  font-size: 2.4rem;
-  margin-bottom: 0.8rem;
-  font-weight: 600;
-}
-
-.ful {
-  color: #366e47;
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin-bottom: 4.9rem;
-}
-
-.lead {
-  color: #999999;
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.prove,
-.drive {
-  display: block;
-}
-
-.miss {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 6.4rem;
-}
-
-.trad-image img {
-  width: 1240px;
-  height: 580px;
-  border-radius: 2.4rem;
-}
-
-.trad-image {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  margin-bottom: 10.4rem;
-}
-
-.mg {
-  font-size: 2.4rem;
-  font-weight: 500;
-  color: #f77b09;
-  margin-bottom: 1.6rem;
-}
-
-.data {
   font-size: 4rem;
   font-weight: 700;
-  color: #366e47;
-}
-
-.able {
-  display: block;
+  margin-bottom: 4rem;
   text-align: center;
 }
 
-.goal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 10.4rem 0;
-}
-
-.port,
-.cise,
-.duce,
-.access {
-  display: block;
-}
-
-.pro,
-.locate,
-.line,
-.foster {
+.tise,
+.grow,
+.reach {
+  color: #366e47;
   font-size: 2.4rem;
   font-weight: 700;
-  color: #366e47;
-  margin-bottom: 1.6rem;
+  margin-bottom: 0.8rem;
 }
 
-.liver,
-.enable,
-.grate,
-.build {
-  font-size: 2rem;
+.edge,
+.develop,
+.global {
   color: #999999;
+  font-size: 2rem;
   font-weight: 600;
 }
 
-.vectors,
-.tribes,
-.streams,
-.eyes {
+.driven,
+.mutual,
+.sight {
+  display: block;
+}
+
+.divine,
+.joint,
+.extend {
+  text-align: center;
+}
+
+.divine img,
+.joint img,
+.extend img {
+  margin-bottom: 1.5rem;
+}
+
+.why-me {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.why {
+  background-color: #fff8f2;
+  padding: 6.4rem 0;
+}
+
+.with-we {
+  color: #366e47;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 6.4rem;
+  text-align: center;
+}
+
+.cate,
+.mental,
+.out,
+.gent,
+.tie {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #366e47;
+  margin-bottom: 0.8rem;
+}
+
+.uni,
+.add,
+.rely,
+.focus,
+.seek {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #a6a6a6;
+  margin-bottom: 4rem;
+}
+
+.king,
+.pole {
+  display: block;
+}
+
+.caps,
+.ngo,
+.vector,
+.ment,
+.png {
   display: flex;
   gap: 0.8rem;
 }
 
-.gain,
-.exp {
+.cap {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  padding-bottom: 6.4rem;
 }
 
-.icons,
-.main {
-  background-color: #f1f5f4;
+.cap img {
+  margin-top: 1.5rem;
 }
 
 .form {
@@ -428,6 +431,11 @@ footer {
   text-decoration: none;
   color: white;
   font-size: 1.6rem;
+}
+
+.pages li a:hover,
+.tel a:hover {
+  color: #f77b09;
 }
 
 .pages li {
