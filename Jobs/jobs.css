@@ -1,0 +1,580 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 1440px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", serif;
+}
+
+.language-bar {
+  background-color: #366e47;
+  padding: 0.5rem 0;
+  width: 100%;
+  height: 5rem; /* Adjusted for consistency */
+}
+
+.language-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 2rem;
+}
+
+#chevon {
+  color: black;
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: black;
+  text-decoration: none;
+  font-size: 1.4rem;
+  background-color: white;
+  padding: 0.9rem 1.2rem;
+  border-radius: 0.8rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #2a4632b2;
+  height: 7rem;
+  padding: 0 2rem;
+  position: relative; /* Keep relative positioning for other elements */
+}
+
+.nav-image img {
+  width: 101px;
+  height: 31px;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listed a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin: 0 1.5rem;
+  color: white;
+}
+
+.listed a:hover {
+  border-bottom: 0.5rem solid #f77b09;
+  border-radius: 0.6rem;
+}
+
+.listed1 a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin: 0 1.5rem;
+  color: white;
+  border-bottom: 0.5rem solid #f77b09;
+  border-radius: 0.6rem;
+}
+
+.listed2 a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin: 0 1.5rem;
+  color: #f77b09;
+  border: 0.1rem solid #f77b09;
+  padding: 0.7rem 2rem;
+  border-radius: 0.8rem;
+}
+
+.listed2 a:hover {
+  background: #d06c0f;
+  color: white;
+}
+
+.listed3 a:hover {
+  background-color: #d06c0f;
+}
+
+.listed3 a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin: 0 1.5rem;
+  background-color: #f77b09;
+  color: white;
+  border: 0.1rem solid #f77b09;
+  padding: 0.7rem 2rem;
+  border-radius: 0.8rem;
+}
+
+.about {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #f77b09;
+  margin-bottom: 1.6rem;
+}
+
+.late {
+  display: block;
+}
+
+.innovate {
+  font-size: 5.4rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.man {
+  text-align: center;
+  padding-top: 5rem;
+  margin-top: 5rem;
+}
+
+.nav-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px; /* Or adjust as needed */
+  z-index: -1; /* Keep it behind the navbar */
+}
+
+.nav-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero {
+  /* REMOVE background-image, background-position, background-size, background-repeat */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team {
+  color: #366e47;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.rev {
+  display: block;
+}
+
+.avail {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #366e47;
+  margin-bottom: 3.2rem;
+}
+
+.type1 {
+  display: block;
+}
+
+.dev {
+  display: flex;
+  justify-content: space-around;
+}
+
+.heroine {
+  background-color: #fff8f2;
+  padding: 10.4rem 0;
+  margin-bottom: 10.4rem;
+}
+
+#job,
+#type {
+  height: 4rem;
+  width: 33rem;
+  border-radius: 0.8rem;
+  margin-bottom: 3.4rem;
+  font-size: 1.6rem;
+  padding-left: 1.3rem;
+  color: #a6a6a6;
+}
+
+#submit {
+  border: none;
+  background-color: #f77b09;
+  color: #e8e8e8;
+  padding: 1.6rem 14.6rem;
+  border-radius: 0.8rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.jobs {
+  background-color: #fde5ce;
+  padding: 3.4rem 4.2rem;
+  border-radius: 1.6rem;
+}
+
+.current {
+  color: #f77b09;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 3.4rem;
+  padding-left: 7rem;
+}
+
+.vec {
+  display: flex;
+  gap: 6.4rem;
+}
+
+.lyst {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: green;
+}
+
+.span {
+  color: #a6a6a6;
+}
+
+.year {
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: #366e47;
+}
+
+.analyst {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+}
+
+.res {
+  color: #a6a6a6;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.gene li {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #a6a6a6;
+}
+
+.gene {
+  margin-bottom: 3.2rem;
+}
+
+.grace {
+  display: flex;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.full,
+.ana,
+.abuja {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #999999;
+  background-color: #feecd6;
+  padding: 1rem 2.4rem;
+  border-radius: 0.8rem;
+}
+
+.now a {
+  color: #feecd6;
+  background-color: #f77b09;
+  padding: 1rem 4rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.gas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gene {
+  padding-left: 4rem;
+}
+
+.fav,
+.fav1 {
+  background-color: #fff8f2;
+  width: 90%;
+  padding: 3rem 2rem;
+  border-radius: 0.8rem;
+  border: 1px solid #999999;
+  margin: 0 auto;
+  margin-bottom: 2.4rem;
+}
+
+.fav1 {
+  margin-bottom: 10.4rem;
+}
+
+.us {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #366e47;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+.career,
+.impact,
+.native,
+.col {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #366e47;
+  margin-bottom: 1.6rem;
+}
+
+.lop,
+.platform,
+.mic,
+.goal {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #999999;
+}
+
+.cars,
+.circle,
+.inno,
+.collar {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.cars,
+.inno {
+  margin-bottom: 6.4rem;
+}
+
+.fast {
+  display: block;
+}
+
+.world {
+  display: flex;
+  justify-content: space-around;
+}
+
+.peoples img {
+  width: 440px;
+  height: 480px;
+  border-radius: 2.4rem 0 0 2.4rem;
+}
+
+.how-to {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #fff8f2;
+}
+
+.steps {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff8f2;
+  margin-bottom: 2.4rem;
+}
+
+.app {
+  display: block;
+}
+
+.people {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.how {
+  background-color: #f77b09;
+  padding: 11.3rem 10.8rem 10rem 10rem;
+  border-radius: 0 2.4rem 2.4rem 0;
+}
+
+.link a {
+  color: #366e47;
+  background-color: #fff8f2;
+  padding: 1.6rem 9.2rem;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.mess {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #366e47;
+  margin-bottom: 3.2rem;
+}
+
+#fname,
+#lname,
+#loc,
+#email {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #a6a6a6;
+  width: 35rem;
+  height: 5rem;
+  border-radius: 0.8rem;
+  padding-left: 1rem;
+}
+
+.first,
+.email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+
+#message {
+  font-size: 2rem;
+  color: #a6a6a6;
+  margin-bottom: 3.2rem;
+  padding-left: 1rem;
+  border-radius: 0.8rem;
+}
+
+.area {
+  text-align: center;
+}
+
+.send {
+  text-align: center;
+}
+
+#sub {
+  color: #e8e8e8;
+  font-size: 1.6rem;
+  background-color: #f77b09;
+  padding: 1.6rem 50rem;
+  border: none;
+  border-radius: 0.8rem;
+}
+
+.ash {
+  background-color: #e8e8e8;
+  padding: 6.4rem;
+  width: 90%;
+  border-radius: 1.6rem;
+  margin: 0 auto;
+}
+
+.before {
+  background-color: #366e47;
+  padding: 10.4rem 0;
+}
+
+footer {
+  background-color: #366e47;
+}
+
+.pop img {
+  margin-bottom: 3.4rem;
+}
+
+.serve {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: white;
+}
+
+#pages {
+  list-style: none;
+}
+
+.pages li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.pages li a:hover,
+.tel a:hover {
+  color: #f77b09;
+}
+
+.pages li {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.pg {
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.tel {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.tel a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.fa-solid,
+.fa-regular {
+  color: #f77b09;
+  margin-right: 0.8rem;
+  font-size: 1.6rem;
+}
+
+.cen {
+  display: block;
+  margin-left: 2.5rem;
+}
+
+.tact {
+  color: white;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.mapp {
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 1.6rem;
+}
+
+.tog {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.below {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10.4rem;
+  background-image: url("images/Footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
