@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   max-width: 1440px;
+  outline: 0;
 }
 
 html {
