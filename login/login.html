@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Partnership</title>
-    <link rel="stylesheet" href="partners.css" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,6 +30,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <center>
       <div id="signincontainer">
@@ -41,119 +42,66 @@
           </div>
         </div>
         <div id="Inputcontainer">
-          <h1 id="poputracker">Popu Tracker</h1>
-          <br /><br />
-          <h1 id="header">Create a Population Tracker Account</h1>
-          <h2>
-            Stay updated with real-time, population tracking for accurate
-            governance and resource allocation.
-          </h2>
-          <br /><br />
-          <br /><br />
-          <br /><br />
-          <br /><br />
-          <span id="warn"></span>
-          <br /><br />
-          <div id="inputs">
-            <div id="textarea">
-              <label for="Firstname*">First Name*</label>
-              <br />
-              <br />
-              <input id="name1" type="text" placeholder="Victor" />
-            </div>
-            <div id="textarea">
-              <label for="Firstname*">Last Name</label>
-              <br />
-              <br />
-              <input id="name2" type="text" placeholder="Jackson" />
-            </div>
-          </div>
-          <br /><br />
-          <br /><br />
-          <br /><br />
-          <br /><br />
-          <div id="emailtextarea">
-            <label for="Firstname*">Your Email</label>
+          <div id="inputtxtandtextareaplusbtns">
+            <h1>PopuTracker</h1>
+            <br /><br />
+            <br /><br />
             <br />
+            <h2>Welcome back</h2>
+            <br /><br /><br />
+            <div class="textarea1" id="textarea">
+              <label for="Your Email">Your Email</label><br />
+              <input id="email" type="email" placeholder="example@gmail.com" />
+              <br /><br />
+              <b class="emailwarn" id="warn">Please input a valid email</b>
+            </div>
+            <br /><br />
             <br />
-            <input id="email" type="email" placeholder="example@gmail.com" />
-          </div>
-          <br /><br />
-          <br /><br /><br />
-          <div id="passwords">
-            <label id="passwordlabel" for="Firstname*">Password</label>
-            <br /><br />
-            <div id="passwordcontainer">
-              <input
-                class="password1"
-                id="passwordtextarea"
-                type="text"
-                placeholder=""
-              />
-              <i id="viewpassword" class="fa-solid fa-eye"></i>
-              <i id="hidepassword" class="fa-solid fa-eye-slash"></i>
-            </div>
-          </div>
-          <br /><br />
-          <br /><br /><br />
-          <div id="passwords">
-            <label id="passwordlabel" for="Firstname*">Confirm Password</label>
-            <br /><br />
-            <div id="passwordcontainer">
-              <input
-                class="password2"
-                id="passwordtextarea"
-                type="text"
-                placeholder=""
-              />
-              <i id="viewpassword" class="fa-solid fa-eye"></i>
-              <i id="hidepassword" class="fa-solid fa-eye-slash"></i>
-            </div>
-          </div>
-          <br /><br />
-          <br /><br /><br />
-          <div id="phoneandcode">
-            <label id="passwordlabel" for="Firstname*">Phone Number</label>
-            <br /><br />
-            <div id="Phonecontainer">
-              <div id="country">
-                <div id="Countrycode">
-                  <img id="Nigeriaicon" src="Nigeria.jpeg" alt="" />+234
-                </div>
+            <div class="textarea2" id="textarea">
+              <label for="Your Email">Password</label><br />
+              <div id="password">
+                <input id="Password" type="password" placeholder="" />
+                <br />
+                <i id="viewpassword" class="fa-solid fa-eye"></i>
+                <i id="hidepassword" class="fa-solid fa-eye-slash"></i>
               </div>
-              <input
-                class="number"
-                id="phonetextarea"
-                type="tel"
-                placeholder=""
-              />
             </div>
-          </div>
-          <br /><br />
-          <br /><br />
-          <div id="remeberpassword">
-            <b id="checkboxtxt"
-              ><input id="checkbox" type="checkbox" />I agree to the General
-              Terms of Use, Merchant Terms of <br />
-              Use & General Privacy Policy of PopuTracker</b
-            >
-          </div>
-          <br /><br />
-          <br /><br />
-          <br /><br />
-          <input id="continuebtn" type="button" value="continue" />
-          <br /><br />
-          <br /><br />
-          <div id="donthaveanaccount">
-            <b id="createacc"
-              >Already have an account?
-              <a id="createacclink" href="signin.htm">Login</a></b
-            >
+            <div id="remeberpassword">
+              <b id="checkboxtxt"
+                ><input id="checkbox" type="checkbox" />Remember Password</b
+              >
+            </div>
+            <div id="forgotpassword">
+              <b><a id="link" href="Forgot">Forgot Password</a></b>
+            </div>
+            <br /><br />
+            <br /><br />
+            <br /><br />
+            <br /><br /><br />
+            <b class="passwordwarn" id="warn">Please input your password</b>
+            <br /><br />
+            <br />
+            <input id="continuebtn" type="button" value="continue" />
+            <br /><br />
+            <div id="donthaveanaccount">
+              <b id="createacc"
+                >Don't have an account?
+                <a id="createacclink" href="../signup/signup.html"
+                  >Create One</a
+                ></b
+              >
+            </div>
+            <br /><br />
+            <br /><br />
+            <div id="createacc">
+              <b id="agree"
+                >By continuing, you agree to theBumbs User Agreement and Privacy
+                Policy</b
+              >
+            </div>
           </div>
         </div>
       </div>
     </center>
-
-    <script></script>
   </body>
 </html>

@@ -1,0 +1,357 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", serif;
+  outline: 0;
+}
+html {
+  font-size: 62.5%;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+#signincontainer {
+  height: 96vh;
+  width: 90%;
+  border: 0;
+  margin-top: 5vh;
+}
+#signinImage {
+  height: 90vh;
+  width: 35%;
+  border: 0;
+  float: left;
+  background-image: linear-gradient(
+      rgba(255, 166, 0, 0.183),
+      rgba(0, 0, 0, 0.534)
+    ),
+    url(Images/portrait-overweight-couple-traveling-world-together.png);
+  background-repeat: no-repeat 50% 50%;
+  background-position: center;
+  border-radius: 30px;
+  margin-top: 15vh;
+  -webkit-background-size: cover;
+  background-size: cover;
+  animation: animate 7s linear infinite;
+  opacity: 0.8;
+}
+
+button {
+  border-radius: 200px;
+  padding: 1vh;
+  border: 0;
+  outline: 0;
+  margin-top: 82vh;
+}
+#btn {
+  float: left;
+  margin-left: 3vw;
+}
+#picture1 {
+  background-color: rgba(144, 238, 144, 0.453);
+}
+#Inputcontainer {
+  height: 140vh;
+  width: 60%;
+  float: right;
+  border: 0;
+  margin-top: -4vh;
+  margin-right: 2vw;
+}
+#inputtxtandtextareaplusbtns {
+  float: left;
+}
+h1 {
+  font-size: 3rem;
+  float: left;
+}
+h2 {
+  font-size: 2rem;
+  float: left;
+  margin-left: 1vw;
+  width: 80%;
+}
+label {
+  float: left;
+  font-size: 1.6rem;
+}
+i {
+  color: black;
+  font-size: 1.8rem;
+  margin-top: 1vh;
+}
+#checkboxtxt {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+#remeberpassword {
+  float: left;
+  margin-top: 2vh;
+  margin-left: 1vw;
+}
+#checkbox {
+  width: 50px;
+  height: 20px;
+  accent-color: green;
+}
+#forgotpassword {
+  font-size: 1.5rem;
+  float: right;
+  margin-top: 3vh;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#continuebtn {
+  width: 80%;
+  padding: 10px;
+  float: left;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  background-color: rgb(255, 98, 0);
+  color: white;
+  margin-left: 1vw;
+}
+#createacc {
+  font-size: 1.4rem;
+  float: left;
+}
+#createacclink {
+  text-decoration: none;
+  color: green;
+}
+b {
+  float: left;
+}
+#warn {
+  color: red;
+  font-size: 1.4rem;
+  font-weight: normal;
+  float: left;
+  font-weight: bolder;
+  margin-left: 18vw;
+  visibility: hidden;
+}
+#warn::before {
+  content: "Input all field!";
+}
+#textarea {
+  float: left;
+  padding: 10px;
+  margin-left: 5vw;
+}
+input {
+  padding: 14px;
+  width: 18vw;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+#inputs {
+  float: left;
+  margin-left: -5vw;
+}
+label {
+  font-weight: bolder;
+}
+#emailtextarea {
+  margin-left: 1vw;
+}
+#email {
+  float: left;
+  width: 80%;
+}
+#textareaforpassword {
+  background-color: white;
+  width: 80%;
+  float: left;
+  margin-top: 4vh;
+  height: 8vh;
+  border: 1px solid gray;
+  color: white;
+  margin-left: -5vw;
+}
+#Password {
+  float: left;
+  width: 85%;
+}
+i {
+  color: black;
+  float: right;
+  margin-right: 1vw;
+  margin-top: 2vh;
+}
+#passwordcontainer {
+  width: 80%;
+  border-radius: 7px;
+  height: 8vh;
+  background-color: transparent;
+  border: 1px solid gray;
+  float: left;
+  margin-left: 1vw;
+  color: white;
+}
+#Phonecontainer {
+  width: 80%;
+  border-radius: 7px;
+  height: 8vh;
+  background-color: transparent;
+  border: 1px solid gray;
+  float: left;
+  margin-left: 1vw;
+  color: black;
+}
+#passwordlabel {
+  margin-left: 1vw;
+}
+#passwordtextarea {
+  float: left;
+  width: 85%;
+  border: 0;
+}
+#phonetextarea {
+  float: right;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 80%;
+  border: 0;
+}
+#viewpassword {
+  display: none;
+}
+#country {
+  float: left;
+  background-color: white;
+  height: 7.6vh;
+  border: 0;
+  width: 20%;
+}
+#poputracker {
+  visibility: hidden;
+}
+#Nigeriaicon {
+  float: left;
+  margin-left: 1vw;
+}
+#Countrycode {
+  font-size: 1.6rem;
+  margin-top: 2vh;
+}
+@media only screen and (max-width: 800px) {
+  #signinImage {
+    display: none;
+  }
+  h2 {
+    font-size: 15px;
+    width: 100%;
+    float: left;
+    margin-top: 1vh;
+    color: gray;
+    transform: scale(0.9);
+    margin-left: -1.4vh;
+  }
+  #Inputcontainer {
+    width: 100%;
+  }
+  #signincontainer {
+    float: left;
+    text-align: left;
+    width: 100%;
+  }
+  #Inputcontainer {
+    float: left;
+  }
+  h1 {
+    margin-left: 1.4vh;
+    font-size: 17px;
+    margin-top: 4vh;
+  }
+  #poputracker {
+    visibility: visible;
+    font-size: 30px;
+  }
+  #name1 {
+    width: 40vw;
+    padding: 20px;
+  }
+  #name2 {
+    float: left;
+    width: 40vw;
+    padding: 20px;
+  }
+  #email {
+    width: 93%;
+    padding: 20px;
+  }
+  #emailtextarea {
+    margin-left: 3vw;
+    margin-top: 10vh;
+  }
+  #passwordcontainer {
+    height: 10vh;
+    width: 93%;
+  }
+  #Phonecontainer {
+    width: 93%;
+    height: 9vh;
+  }
+  #phoneandcode {
+    margin-left: 3vw;
+    margin-top: 3vh;
+  }
+  #Countrycode {
+    display: flex;
+    width: 24vw;
+  }
+  #phonetextarea {
+    width: 78%;
+  }
+  #checkboxtxt {
+    font-size: 10px;
+    width: 100%;
+    display: flex;
+    transform: scale(1.1);
+  }
+  #continuebtn {
+    width: 91%;
+    margin-left: 4vw;
+  }
+  #passwordtextarea {
+    padding: 20px;
+  }
+  #passwords {
+    margin-left: 3vw;
+    margin-top: 3vh;
+  }
+  #createacc {
+    margin-left: 3vw;
+  }
+}
+@keyframes animate {
+  100% {
+    background-image: linear-gradient(
+        rgba(255, 166, 0, 0.183),
+        rgba(0, 0, 0, 0.534)
+      ),
+      url(Images/undefined_image.png);
+    opacity: 1;
+  }
+  50% {
+    background-image: linear-gradient(
+        rgba(255, 166, 0, 0.183),
+        rgba(0, 0, 0, 0.534)
+      ),
+      url(Images/undefined_image1.png);
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 900px) {
+  h2 {
+    margin-top: 2vh;
+  }
+  #header {
+    margin-top: 8vh;
+  }
+}
