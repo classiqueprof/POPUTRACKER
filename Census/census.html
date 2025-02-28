@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="contact.css" />
+    <title>Generate Census Data</title>
+    <link rel="stylesheet" href="census.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -59,9 +59,7 @@
             <li class="listed">
               <a href="../About Us/about.html">About Us</a>
             </li>
-            <li class="listed">
-              <a href="#">PIN <i class="fa-solid fa-chevron-down"></i></a>
-            </li>
+            <li class="listed"><a href="#">PIN</a></li>
             <li class="listed">
               <a href="../Partners/partners.html">Paternership</a>
             </li>
@@ -77,76 +75,168 @@
     </header>
 
     <section class="hero">
-      <div class="hero-overlay"></div>
       <div class="man">
-        <h3 class="about">Contact Us</h3>
-        <p class="innovate">
-          Get In Touch
-          <span class="late">With Us</span>
-        </p>
+        <h3 class="certify">Generate Birth Certificate</h3>
       </div>
     </section>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <section class="gray">
-      <div id="contact">
-        <div class="contact">
-          <p class="con-man">Contact Us</p>
-          <p class="you">We Love to Hear <span class="from"></span>from You</p>
-          <p class="help">
-            At POPUTRACKER, we’re always here to help. If you have any
-            <span class="soon"
-              >inquiries or would like to discuss how we can collaborate, </span
-            ><span class="soon"
-              >don’t hesitate to get in touch. Our team is ready to provide the </span
-            ><span class="soon"
-              >support you need and explore opportunities for partnership. </span
-            ><span class="soon"
-              >Fill out the form below, and we’ll get back to you as </span
-            ><span class="soon">soon as possible!</span>
-          </p>
-          <p class="info">Contact Information</p>
-          <p class="general">General Inquiries: +234 123 456 7890</p>
-          <p class="general">Support Team: +234 987 654 3210</p>
-          <p class="general">Partnerships: +234 555 123 4567</p>
-          <p class="general">Email: contact@poputracker.com</p>
-
-          <p class="head">POPUTRACKER Headquarters</p>
-          <p class="address">
-            123 Population Drive,
-            <span class="cen">Central Business District, </span
-            ><span class="cen">Abuja, Nigeria</span>
-          </p>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <section class="birth">
+      <div class="form-container">
+        <div class="form-row">
+          <div class="form-group" style="flex: 2">
+            <label class="form-label"></label>
+            <input type="text" placeholder="Full Name" />
+            <div class="small-text">As written in your birth certificate</div>
+          </div>
+          <div class="form-group" style="flex: 0.4">
+            <label class="form-label"></label>
+            <div class="radio-group">
+              <label class="check" id="checks"
+                >Sex
+                <input type="checkbox" name="check" value="M" id="check" /> M
+              </label>
+              <label class="check" id="checks">
+                <input type="checkbox" name="check" value="F" id="check" /> F
+              </label>
+            </div>
+          </div>
+          <div class="form-group" style="flex: 1">
+            <label class="spec"></label>
+            <input
+              type="text"
+              name="spec"
+              id="spec"
+              placeholder="Specify"
+              required
+            />
+          </div>
         </div>
-        <div class="leave">
-          <p class="avail">Leave Us a Message</p>
-          <form action="">
-            <label for="job"></label>
-            <span class="type1"
-              ><input type="text" name="job" id="job" placeholder="Your Name"
-            /></span>
-            <label for="type"></label>
-            <span class="type1">
-              <input type="text" name="type" id="type" placeholder="Your Email"
-            /></span>
-            <label for="Location"></label>
-            <span class="type1">
-              <input type="text" name="type" id="type" placeholder="Subject"
-            /></span>
-            <span class="type1">
-              <textarea
-                name="type"
-                id="types"
-                cols="30"
-                rows="10"
-                placeholder="Your Message"
-              ></textarea>
-            </span>
-            <button type="submit" id="submit">Search</button>
-          </form>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="dob"></label>
+            <input
+              type="date"
+              name="dob"
+              id="dob"
+              placeholder="Date of Birth"
+              required
+            />
+            <div class="small-text">mm/dd/yyyy</div>
+          </div>
+          <div class="form-group">
+            <label class="tel"></label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              required
+              placeholder="Phone Number"
+            />
+            <div class="small-text">Primary Contact</div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="file" id="label-file">BVN/NIN/Passport Number</label>
+            <input
+              type="file"
+              name="file"
+              id="file"
+              placeholder="BVN/NIN/Passport Number"
+            />
+            <div class="small-text">Upload file</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label"></label>
+            <input type="email" placeholder="Email Address" />
+            <div class="small-text">(e.g. johndoe@domain.com)</div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="email"></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Mailing address"
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="address"></label>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Address Line"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-row5">
+          <div class="form-group">
+            <label class="city"></label>
+            <input type="text" name="city" id="city" placeholder="City" />
+          </div>
+          <div class="form-group">
+            <label class="state"></label>
+            <input
+              type="text"
+              id="state"
+              name="state"
+              required
+              placeholder="State"
+            />
+          </div>
+          <div class="form-group">
+            <label class="zip"></label>
+            <input
+              type="text"
+              id="zip"
+              name="zip"
+              required
+              placeholder="Zip Code"
+            />
+          </div>
+          <div class="form-group">
+            <label class="country"></label>
+            <input
+              type="text"
+              id="country"
+              name="country"
+              placeholder="Country, if outside Nigeria"
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label"></label>
+            <input
+              type="text"
+              placeholder="List all other names you have used"
+            />
+            <div class="small-text">
+              (Examples: Birth Name, Maiden, Previous Marriage, Legal Name
+              Change)
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <button class="generate-btn" type="submit">
+            Generate Census Data
+          </button>
         </div>
       </div>
     </section>
-
     <section class="work">
       <div class="people">
         <div class="people1">

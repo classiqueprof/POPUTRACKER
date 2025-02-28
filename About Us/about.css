@@ -20,7 +20,7 @@ body {
   background-color: #366e47;
   padding: 0.5rem 0;
   width: 100%;
-  height: 5rem; /* Adjusted for consistency */
+  height: 5rem;
 }
 
 .language-container {
@@ -54,7 +54,7 @@ nav {
   background-color: #2a4632b2;
   height: 7rem;
   padding: 0 2rem;
-  position: relative; /* Keep relative positioning for other elements */
+  position: relative;
 }
 
 .nav-image img {
@@ -74,6 +74,11 @@ nav {
   font-size: 1.6rem;
   margin: 0 1.5rem;
   color: white;
+}
+
+.listed a:hover {
+  border-bottom: 0.5rem solid #f77b09;
+  border-radius: 0.6rem;
 }
 
 .listed1 a {
@@ -115,6 +120,73 @@ nav {
   border-radius: 0.8rem;
 }
 
+.dropdown-menu {
+  position: absolute;
+  width: 270px;
+  background-color: #e1dada;
+  list-style-type: none;
+  margin-top: 2.5rem;
+  opacity: 0;
+}
+
+.dropdown-menu li {
+  padding: 1.5rem 0;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #366e47;
+}
+
+.dropdown-menu li a {
+  color: #366e47;
+}
+
+.dropdown-menu li a:hover {
+  color: #f77b09;
+  border-bottom: none;
+}
+
+nav li:hover .dropdown-menu {
+  opacity: 1;
+}
+
+.arrow-head a {
+  border-bottom: none;
+}
+
+.arrow {
+  margin-left: 5rem;
+}
+
+.sub-menu {
+  position: absolute;
+  width: 270px;
+  background-color: #e1dada;
+  list-style-type: none;
+  margin-top: -5.3rem;
+  margin-left: 27rem;
+  opacity: 0;
+  display: none;
+}
+
+.sub-menu li {
+  padding: 1.5rem 0;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #366e47;
+}
+
+.sub-menu li a {
+  color: #366e47;
+}
+
+.sub-menu li a:hover {
+  color: #f77b09;
+  border-bottom: none;
+  display: block;
+}
+
+nav li:hover .sub-menu {
+  opacity: 1;
+}
+
 .about {
   font-size: 2.4rem;
   font-weight: 500;
@@ -143,8 +215,8 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 500px; /* Or adjust as needed */
-  z-index: -1; /* Keep it behind the navbar */
+  height: 500px;
+  z-index: -1;
 }
 
 .nav-background img {
@@ -490,4 +562,465 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-family: "Manrope", serif;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    background: #2a4632b2;
+    padding: 1rem;
+  }
+
+  .navbar-list.active {
+    display: flex;
+  }
+
+  .navbar-list li {
+    margin: 1rem 0;
+  }
+
+  nav {
+    background-color: transparent;
+  }
+
+  .dropdown-menu,
+  .sub-menu {
+    position: static;
+    width: 100%;
+    margin: 0;
+    opacity: 1;
+    background: #e1dada;
+    box-shadow: none;
+  }
+
+  .listed a,
+  .listed1 a,
+  .listed2 a,
+  .listed3 a {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  .nav-image img {
+    width: 80px;
+    height: auto;
+  }
+
+  .nav-background {
+    height: 300px; /* Reduced height for mobile */
+  }
+
+  .man {
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+
+  .about {
+    font-size: 1.8rem;
+  }
+
+  .innovate {
+    font-size: 2.4rem;
+  }
+
+  .stand {
+    margin-top: 5rem;
+  }
+
+  .race,
+  .miss,
+  .gain,
+  .exp {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .for,
+  .huge,
+  .ion,
+  .vision,
+  .mg,
+  .pro,
+  .locate,
+  .line,
+  .foster {
+    font-size: 1.8rem;
+  }
+
+  .cate,
+  .tracker,
+  .real,
+  .nate,
+  .ful,
+  .lead,
+  .data,
+  .liver,
+  .enable,
+  .grate,
+  .build {
+    font-size: 1.6rem;
+  }
+
+  .trad-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  #join {
+    padding: 2rem 1rem;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  .join {
+    font-size: 2.4rem;
+  }
+
+  .part {
+    font-size: 1.6rem;
+  }
+
+  .tina a {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+  }
+
+  .tog {
+    gap: 3.2rem;
+  }
+
+  .below {
+    flex-direction: column;
+    height: auto;
+    padding-top: 5rem;
+  }
+}
+
+/* Additional Media Query for Very Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  body {
+    font-family: "Manrope", serif;
+  }
+
+  .about {
+    font-size: 1.5rem;
+  }
+
+  .innovate {
+    font-size: 2rem;
+  }
+
+  .for,
+  .huge,
+  .ion,
+  .vision,
+  .mg,
+  .pro,
+  .locate,
+  .line,
+  .foster {
+    font-size: 1.5rem;
+  }
+
+  .cate,
+  .tracker,
+  .real,
+  .nate,
+  .ful,
+  .lead,
+  .data,
+  .liver,
+  .enable,
+  .grate,
+  .build {
+    font-size: 1.4rem;
+  }
+
+  .join {
+    font-size: 2rem;
+  }
+
+  .part {
+    font-size: 1.4rem;
+  }
+
+  .accurate {
+    display: inline-block;
+    /* justify-content: flex-start;
+    align-items: center; */
+  }
+
+  .for {
+    font-size: 2rem;
+    text-align: left;
+    padding: 0 1rem;
+  }
+  .cate {
+    font-size: 2.4rem;
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .huge {
+    font-size: 2rem;
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .tracker {
+    font-size: 1.6rem;
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .collab {
+    display: inline;
+  }
+
+  .ion {
+    font-size: 2rem;
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .real {
+    font-size: 2rem;
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .lation {
+    display: inline;
+  }
+  .nate {
+    font-size: 1.6rem;
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .vision {
+    font-size: 2rem;
+    text-align: left;
+    padding: 0 1rem;
+  }
+  .ful {
+    font-size: 2rem;
+    text-align: left;
+    padding: 0 1rem;
+  }
+  .drive {
+    display: inline;
+  }
+
+  .prove {
+    display: inline;
+  }
+  .lead {
+    font-size: 1.6rem;
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .trad-image img {
+    padding: 0 1rem;
+  }
+
+  .mg {
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  .data {
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .able {
+    display: inline;
+  }
+
+  .pro {
+    font-size: 1.8rem;
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .liver {
+    font-size: 1.6rem;
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .port {
+    display: inline;
+  }
+
+  .vectors,
+  .tribes,
+  .streams,
+  .eyes {
+    padding: 0 1rem;
+  }
+
+  .locate,
+  .line,
+  .foster {
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    text-align: left;
+  }
+
+  .enable,
+  .grate,
+  .build {
+    font-size: 1.6rem;
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .cise,
+  .duce,
+  .access {
+    display: inline;
+  }
+
+  .icons img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .people1 img {
+    width: 150px;
+    height: 220px;
+  }
+
+  .join {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .part {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .form {
+    display: inline;
+  }
+  .people {
+    display: flex;
+    gap: 0;
+    padding: 0 1rem;
+  }
+
+  .tina a {
+    padding: 0.8rem 3rem;
+    font-size: 1.4rem;
+  }
+
+  #join {
+    text-align: left;
+    padding: 4rem 1rem;
+    border-radius: 0 2.4rem 2.4rem 0;
+  }
+
+  .pop img {
+    width: 110.8px;
+    height: 64px;
+    padding: 0 1rem;
+  }
+
+  .serve {
+    font-size: 1.4rem;
+    margin-top: -2rem;
+    padding: 0 1rem;
+  }
+
+  .below {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-top: 5rem;
+  }
+
+  .map {
+    order: 1;
+    padding: 0 1rem;
+    margin-top: 3.2rem;
+    margin-bottom: 6rem;
+  }
+
+  .tog {
+    gap: 3.6rem;
+    padding: 0 1rem;
+    margin-top: 3.2rem;
+  }
+
+  .language-container {
+    display: none;
+  }
+
+  .nav-image {
+    text-align: left;
+    display: block;
+    margin-top: -12rem;
+    margin-left: -14rem;
+  }
+}
+
+@media (max-width: 360px) {
+  #join {
+    text-align: left;
+    padding: 3.9rem 1rem;
+    border-radius: 0 2.4rem 2.4rem 0;
+  }
+  .people1 img {
+    width: 150px;
+    height: 233px;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav-image {
+    text-align: left;
+    display: block;
+    margin-top: -12rem;
+    margin-left: -11rem;
+  }
+
+  .tina a {
+    padding: 0.5rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  .map img {
+    width: 302px;
+    height: 214px;
+  }
+
+  #join {
+    text-align: left;
+    padding: 1.5rem 1rem;
+    border-radius: 0 2.4rem 2.4rem 0;
+  }
+
+  .people1 img {
+    width: 150px;
+    height: 240px;
+  }
 }

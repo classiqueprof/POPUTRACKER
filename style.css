@@ -2,22 +2,30 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  max-width: 1440px;
+  font-family: "Manrope", serif;
+  outline: 0;
 }
-
-html {
-  font-size: 62.5%;
-}
-
 body {
   font-family: "Manrope", serif;
+  /* animation: bg 5s reverse ease-in 1; */
+}
+/* @keyframes bg {
+  100% {
+    background-color: rgba(144, 238, 144, 0.499);
+  }
+} */
+html {
+  font-size: 62.5%;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 .language-bar {
   background-color: #366e47;
   padding: 0.5rem 0;
   width: 100%;
-  height: 5rem; /* Adjusted for consistency */
+  height: 5rem;
 }
 
 .language-container {
@@ -51,7 +59,7 @@ nav {
   background-color: #2a4632b2;
   height: 7rem;
   padding: 0 2rem;
-  position: relative; /* Keep relative positioning for other elements */
+  position: relative;
 }
 
 .nav-image img {
@@ -117,20 +125,87 @@ nav {
   border-radius: 0.8rem;
 }
 
-.about {
-  font-size: 5.4rem;
-  font-weight: 500;
-  color: white;
-  margin-bottom: 1.6rem;
+.dropdown-menu {
+  position: absolute;
+  width: 270px;
+  background-color: #e1dada;
+  list-style-type: none;
+  margin-top: 2.5rem;
+  opacity: 0;
 }
 
-.gov,
-.age {
+.dropdown-menu li {
+  padding: 1.5rem 0;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #366e47;
+}
+
+.dropdown-menu li a {
+  color: #366e47;
+}
+
+.dropdown-menu li a:hover {
+  color: #f77b09;
+  border-bottom: none;
+}
+
+nav li:hover .dropdown-menu {
+  opacity: 1;
+}
+
+.arrow-head a {
+  border-bottom: none;
+}
+
+.arrow {
+  margin-left: 5rem;
+}
+
+.sub-menu {
+  position: absolute;
+  width: 270px;
+  background-color: #e1dada;
+  list-style-type: none;
+  margin-top: -5.3rem;
+  margin-left: 27rem;
+  opacity: 0;
+  display: none;
+}
+
+.sub-menu li {
+  padding: 1.5rem 0;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #366e47;
+}
+
+.sub-menu li a {
+  color: #366e47;
+}
+
+.sub-menu li a:hover {
+  color: #f77b09;
+  border-bottom: none;
+  display: block;
+}
+
+nav li:hover .sub-menu {
+  opacity: 1;
+}
+
+.about {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #f77b09;
+  margin: 0;
+  text-align: center;
+}
+
+.late {
   display: block;
 }
 
 .innovate {
-  font-size: 3.6rem;
+  font-size: 4.4rem;
   font-weight: 700;
   color: white;
   margin: 0;
@@ -146,13 +221,14 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 500px; /* Or adjust as needed */
-  z-index: -1; /* Keep it behind the navbar */
+  height: 500px;
+  z-index: -1;
 }
 
 .nav-background img {
-  width: 1370px;
-  /* object-fit: cover; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero {
@@ -167,34 +243,1198 @@ nav {
   margin-top: 6rem;
 }
 
-.pin,
-.gen {
-  font-size: 2rem;
-  font-weight: 600;
+#countrycode {
+  width: 22rem;
+  padding: 15px;
+  justify-content: space-between;
+  margin-left: 2vw;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.561);
+  border: 0;
+  text-shadow: 1px 0px black;
+  color: white;
+}
+#languagebtn {
+  width: 8rem;
+  border-radius: 20px;
+  border: 0;
+  float: right;
+  margin-right: 5vw;
+  margin-top: 2vh;
+  padding: 5px;
+}
+#languageimg {
+  float: left;
+  height: 15px;
+  width: 15px;
+}
+#deep-drop-down {
+  color: orange;
+}
+#homelink {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 128, 0);
+  text-decoration-thickness: 4px;
 }
 
-.pin a {
-  text-decoration: none;
-  color: white;
+#pinoption {
+  background-color: white;
+  height: 25vh;
+  width: 23vw;
+  position: absolute;
+  float: left;
+  margin-left: 30vw;
+}
+#pinoptionbtn,
+#pinoptionbtndrop {
+  width: 100%;
+  border: 1px solid green;
+  padding: 17px;
+  border-left: hidden;
+  border-right: hidden;
+  border-top: hidden;
+  text-align: left;
+  color: green;
+  font-size: 1.6rem;
+}
+#pinoption {
+  visibility: hidden;
+  opacity: 0;
+}
+#pinoptionbtn:hover {
+  color: rgb(255, 115, 0);
+  transition: 0.4s;
+}
+#record-options {
+  height: 35vh;
+  width: 53vh;
+  background-color: white;
+  position: absolute;
+  float: left;
+  margin-left: 53vw;
+  opacity: 0;
+  margin-top: 18.5vh;
+  visibility: hidden;
+}
+#populationclock {
+  height: 160vh;
+  background-color: rgba(169, 169, 169, 0.217);
+  color: black;
+}
+#populationclockheader {
+  font-size: 3rem;
+}
+#popu-clock {
+  background-image: url(Frame\ 1000006284.png);
+  width: 97vw;
+  height: 35vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#popuclockdisplay {
+  padding: 1vh;
   background-color: transparent;
-  border: 0.5px solid white;
-  padding: 1.2rem 8.2rem;
+  float: right;
+  width: 14vw;
+  margin-right: 5vw;
+  color: red;
+  font-weight: bolder;
+  border: 6px solid lightgray;
+  font-size: 3rem;
+}
+#countrypopulation {
+  height: 16.4vw;
+  width: 48%;
+  background-color: transparent;
+  float: left;
+}
+#Worldpopulation {
+  height: 16.4vw;
+  width: 51%;
+  background-color: transparent;
+  float: right;
+}
+h2 {
+  font-size: 2.6rem;
+  color: white;
+}
+#Nigeriadigit {
+  height: 12vh;
+  width: 4vw;
+  margin-left: -0.5vw;
+  font-size: 2.6rem;
+  font-weight: bolder;
+  color: orangered;
+  border: 0;
+  margin-top: 10vh;
+}
+#worlddigit {
+  height: 12vh;
+  width: 4vw;
+  margin-left: -0.5vw;
+  font-size: 2.6rem;
+  font-weight: bolder;
+  color: orangered;
+  border: 0;
+  margin-top: 10vh;
+}
+#NigeriaPopulationNumbers {
+  font-size: 5rem;
+  color: white;
+}
+#worldPopulationNumbers {
+  font-size: 5rem;
+  color: white;
+}
+marquee {
+  /* backdrop-filter: blur(1px); */
+}
+#poputrackerimg {
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin-left: -3vw;
+  position: absolute;
+}
+button {
+  cursor: pointer;
+}
+#poputracker {
+  font-weight: bolder;
+}
+#poputracker:hover {
+  text-decoration: none;
+  opacity: inherit;
+}
+.btn {
+  animation: btn 1.3s linear alternate-reverse 3;
+  animation-delay: 2.5s;
+}
+@keyframes btn {
+  100% {
+    transform: scale(1.2);
+  }
+}
+#populationrateschangesndcountrytop {
+  height: 53vh;
+  width: 95%;
+  background-color: whitesmoke;
+}
+#componentofpopulationchange {
+  height: 53vh;
+  width: 47%;
+  float: left;
+  background-color: whitesmoke;
+}
+#topmostpopulouscountries {
+  float: right;
+  width: 47%;
+  background-color: whitesmoke;
+  height: 53vh;
+  margin-right: 5.5vw;
+  margin-top: -53vh;
+}
+h3 {
+  font-size: 1.8rem;
+  text-align: left;
+  margin-left: 1vw;
+}
+#populationrangelist {
+  width: 100%;
+  background-color: transparent;
+  height: 6vh;
+  color: black;
+  font-size: 1.6rem;
+}
+#range1 {
+  justify-content: space-between;
+  float: left;
+  margin-left: 1vw;
+  margin-top: 0.5vh;
+}
+#rangebar {
+  width: 11vw;
+  padding: 0.1vh;
+  background-color: rgba(169, 169, 169, 0.477);
+  float: right;
+  margin-top: 1vh;
+  margin-right: 1vw;
+}
+#rangebtn {
+  width: 80%;
+  padding: 1.6vh;
+  border: 0;
+  float: left;
+  background-color: skyblue;
+}
+#rangebtn4 {
+  width: 30%;
+  padding: 1.6vh;
+  border: 0;
+  float: left;
+  background-color: skyblue;
+}
+#rangebtn3 {
+  width: 40%;
+  padding: 1.6vh;
+  border: 0;
+  float: left;
+  background-color: skyblue;
+}
+#rangebtn2 {
+  width: 50%;
+  padding: 1.6vh;
+  border: 0;
+  float: left;
+  background-color: skyblue;
+}
+#countery1-5 {
+  float: left;
+  margin-left: 0.5vw;
+  width: 52%;
+  background-color: transparent;
+  border: 2px solid gray;
+  border-top: hidden;
+  border-bottom: hidden;
+  border-right: hidden;
+  height: 37vh;
+}
+#countery6-10 {
+  float: right;
+  width: 46%;
+  background-color: transparent;
+  height: 37vh;
+}
+#country {
+  float: left;
+  margin-left: 0.6vw;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+#countrytotal {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+#Nigerianpastpopulation {
+  width: 90%;
+  height: 20vh;
+  background-color: whitesmoke;
+  margin-top: 8vh;
+  border-radius: 20px;
+}
+#dateimg {
+  height: 60px;
+  float: left;
+  margin-left: 3vw;
+  margin-top: 2vh;
+  width: 60px;
+}
+#ngdatetext {
+  float: right;
+  font-size: 2rem;
+  margin-right: 16vw;
+  margin-top: -11vh;
+}
+#datedivisor {
+  height: 16vh;
+  position: absolute;
+  float: left;
+  margin-top: 2.5vh;
+  border: 1px solid gray;
+  margin-left: -38vw;
+  background-color: gray;
+}
+#ngabtn {
+  float: right;
+}
+#ngabtn,
+#ngabtn1 {
+  justify-content: space-between;
+  margin-right: 2vw;
+  margin-top: -3vh;
+  font-size: 2rem;
+  font-weight: bolder;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+#right {
+  height: 20px;
+  width: 25px;
+  margin-right: 2vw;
+}
+#right2 {
+  height: 25px;
+  width: 25px;
+  float: right;
+}
+#populousstatesanddensity {
+  height: 120vh;
+  background-color: rgba(128, 128, 128, 0.122);
+}
+#learnmoreanddownoad {
+  width: 20vw;
+  height: 5vh;
+  background-color: transparent;
+  justify-content: space-between;
+  float: right;
+  margin-top: -3vh;
+}
+#ngbtn {
+  padding: 2px;
+  font-weight: bolder;
+  font-size: 2rem;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  float: left;
+}
+#learnmoreanddownoad2 {
+  width: 20vw;
+  height: 5vh;
+  background-color: transparent;
+  justify-content: space-between;
+  float: left;
+}
+#ngbtn2 {
+  padding: 2px;
+  font-weight: bolder;
+  font-size: 2rem;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  color: black;
+  float: left;
+  margin-left: 2vw;
+}
+#chevron-right {
+  color: orange;
+  font-size: 30px;
+  margin-right: 8vw;
+}
+#download-icon {
+  color: orange;
+  font-size: 30px;
+}
+#chevron-right2 {
+  color: orange;
+  font-size: 30px;
+}
+#download-icon2 {
+  color: orange;
+  font-size: 30px;
+}
+#mostpopulousstatecontainer {
+  height: 96vh;
+  border-radius: 10px;
+  float: left;
+  margin-left: 5vw;
+  width: 44%;
+  background-color: white;
+}
+#mostpopulousstatecontainer2 {
+  height: 96vh;
+  border-radius: 10px;
+  float: right;
+  margin-right: 5vw;
+  width: 44%;
+  background-color: white;
+}
+#highdensity {
+  height: 90vh;
+  border-radius: 10px;
+  float: right;
+  margin-right: 5vw;
+  width: 44%;
+  background-color: white;
+}
+h5 {
+  color: black;
+  font-size: 3rem;
+  margin: 2vh 2vw;
+}
+#generate {
+  float: right;
+}
+#topic {
+  padding: 17px;
+  width: 33%;
+  border-radius: 0;
+  border: 2px solid gray;
+  background-color: transparent;
+  font-size: 2.8rem;
+}
+#topic:first-of-type {
+  border-left: hidden;
+  border-right: hidden;
+  font-weight: bolder;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 68, 0, 0.487);
+  text-decoration-thickness: 4px;
+}
+#topic:last-child {
+  border-right: hidden;
+  border-left: hidden;
+}
+#states-population {
+  width: 100%;
+  height: 15vh;
+  background-color: rgba(128, 128, 128, 0.699);
+}
+#statetotal2025-2 {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.123);
+  height: 5vh;
+}
+#statetotal2025 {
+  width: 100%;
+  background-color: transparent;
+  height: 5vh;
+}
+.state2025 {
+  float: left;
+}
+.total2025-2 {
+  float: right;
+}
+#T2025btn {
+  background-color: transparent;
+  color: royalblue;
+  border: 0;
+  outline: 0;
+  font-weight: bolder;
+  width: 3vw;
+  font-size: 1.8rem;
+}
+#nigeriapopuationbyage {
+  height: 180vh;
+  background-color: lightgray;
+}
+#nigeriapopulationbysex {
+  width: 95%;
+  height: 20vh;
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+#text {
+  float: left;
+}
+#textheader-for-population-in-nigeria-by-sex {
+  font-size: 3rem;
+}
+#gender {
+  width: 2rem;
+  padding: 14px;
+  border: 0;
+  outline: 0;
+  margin-right: 1vw;
+}
+#genders {
+  float: right;
+  margin-right: 35vw;
+  margin-top: 4vh;
+}
+li {
+  font-size: 1.6rem;
+  list-style: none;
+}
+li:first-of-type {
+  margin-right: 1.5vw;
+}
+#graph {
+  width: 99%;
+  height: 125vh;
+  background-color: whitesmoke;
+  border-radius: 20px;
+}
+#graphlength {
+  float: left;
+  height: 110vh;
+  width: 8%;
+  margin-left: 1vw;
+  border: hidden;
+  border-radius: 10px;
+}
+#graphbar {
+  width: 87%;
+  border-radius: 10px;
+  float: right;
+  height: 109vh;
+  margin-right: 3vw;
+  border: 2px solid gray;
+}
+#numbersforlength {
+  margin: 1.9vh;
+  font-size: 1.9rem;
+}
+#bar1 {
+  width: 4vw;
+  margin-left: 1vw;
+}
+#barone {
+  width: 50%;
+}
+.Male {
+  background-color: green;
+  border: 0;
+  outline: 0;
+  height: 3.711vh;
+  margin: 2.333vh;
+}
+.Female {
+  background-color: orange;
+  outline: 0;
+  float: right;
+  padding: 11.5px;
+  border: 1px solid whitesmoke;
+  border-right: hidden;
+  border-top: hidden;
+  border-bottom: hidden;
+}
+#bar2 {
+  width: 5vw;
+  margin-left: 2vw;
+}
+#bartwo {
+  float: right;
+  width: 60%;
+}
+#bar3 {
+  width: 6vw;
+  margin-left: 2.4vw;
+}
+#barthree {
+  float: right;
+  width: 60%;
+}
+#bar4 {
+  width: 10vw;
+  margin-left: 1.2vw;
+}
+#barfour {
+  float: right;
+  width: 50%;
+}
+#bar5 {
+  width: 12vw;
+  margin-left: 1.2vw;
+}
+#barfive {
+  float: right;
+  width: 50%;
+}
+#bar6 {
+  width: 14vw;
+  margin-left: 1.2vw;
+}
+#barsix {
+  float: right;
+  width: 50%;
+}
+#bar7 {
+  width: 17vw;
+  margin-left: 2.5vw;
+}
+#barseven {
+  float: right;
+  width: 54%;
+}
+#bar8 {
+  width: 22vw;
+  margin-left: 1vw;
+}
+#bareight {
+  float: right;
+  width: 50%;
+}
+
+#bar9 {
+  width: 28vw;
+  margin-left: 1vw;
+}
+#barnine {
+  float: right;
+  width: 50%;
+}
+#bar10 {
+  width: 33vw;
+  margin-left: 2.3vw;
+}
+#barten {
+  float: right;
+  width: 52%;
+}
+#bar11 {
+  width: 36vw;
+  margin-left: 3.2vw;
+}
+#bareleven {
+  float: right;
+  width: 53%;
+}
+#bar12 {
+  width: 46vw;
+  margin-left: 3.8vw;
+}
+#bartwelve {
+  float: right;
+  width: 53%;
+}
+#bar13 {
+  width: 55vw;
+  margin-left: 4.4vw;
+}
+#barthirteen {
+  float: right;
+  width: 53%;
+}
+#bar14 {
+  width: 64vw;
+  margin-left: 1vw;
+}
+#barfourteen {
+  float: right;
+  width: 50%;
+}
+#bar15 {
+  width: 74vw;
+  margin-left: 4vw;
+}
+#barfifteen {
+  float: right;
+  width: 52%;
+}
+#bar16 {
+  width: 80vw;
+  margin-left: 1vw;
+}
+#barsixteen {
+  float: right;
+  width: 50%;
+}
+#bar17 {
+  width: 82vw;
+  margin-left: 0.9vw;
+}
+#barseventeen {
+  float: right;
+  width: 50%;
+}
+#measuringNumbers {
+  justify-content: space-between;
+  float: left;
+  margin-left: 1.588vw;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.9rem;
+  margin-top: 2vh;
+}
+#birthanddeathrate {
+  height: 200vh;
+  background-color: gray;
+}
+#deathadbirthrategraphcontainer {
+  height: 155vh;
+  width: 95%;
+  background-color: white;
+  border-radius: 30px;
+}
+#yearbirthdeath {
+  height: 145vh;
+  width: 34%;
+  border: 2px solid black;
+  float: left;
+  border-radius: 20px;
+  margin-left: 2vw;
+  margin-top: 2vh;
+}
+
+.graphs {
+  float: right;
+  margin-top: -105rem;
+  margin-right: 8rem;
+}
+
+#deathrate {
+  border: 0;
+  outline: 0;
+  font-size: 2rem;
+  font-weight: bolder;
+  background-color: transparent;
+  justify-content: space-between;
+  float: left;
+  margin: 2vh 3.6vw;
+}
+#yearbirthdate {
+  margin-left: -3vw;
+}
+.timeofdeathandbirthrate {
+  float: left;
+  margin: 2vh 5.2vw;
+  font-size: 1.4rem;
+  margin-left: 1vw;
+  font-weight: bolder;
+}
+#populationidentificationpinnumber {
+  height: 130vh;
+  background-color: whitesmoke;
+}
+#identificationoimg {
+  float: left;
+  border: 2px solid black;
+  height: 90vh;
+  width: 43%;
+  margin-left: 4vw;
+  border-radius: 10px;
+  background-image: linear-gradient(
+      rgba(255, 166, 0, 0.092),
+      rgba(255, 166, 0, 0.103)
+    ),
+    url(unsplash__XR5rkprHQU.png);
+  background-position: -320px;
+  border: 0;
+  background-size: cover;
+}
+#identificationotextdropdown {
+  float: right;
+  margin-right: 4vw;
+  height: 90vh;
+  width: 46%;
+  border-radius: 10px;
+}
+#identificationquestionsdropdownforPIN {
+  width: 100%;
+  height: 10vh;
+  border-radius: 10px;
+  background-color: rgba(5, 157, 5, 0.315);
+  text-align: left;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: darkgreen;
+  cursor: pointer;
+}
+#PINidentificationheader {
+  font-size: 3.6rem;
+  color: darkgreen;
+}
+#questionstextforPIN {
+  margin-left: 2vw;
+  margin-top: -1vh;
+}
+#chevondown {
+  float: right;
+  margin-right: 3vh;
+}
+#Ans1,
+#Ans2,
+#Ans3,
+#Ans4,
+#Ans5 {
+  border: 2px solid green;
+  height: 20vh;
+  width: 98%;
+  border-left: hidden;
+  border-bottom: hidden;
+  border-right: hidden;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: darkgreen;
+  text-align: left;
+  display: none;
+  animation: none;
+}
+@keyframes ans1 {
+  100% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+}
+#learnmoreaboutpinbtn {
+  width: 20vw;
+  color: white;
+  border: 0;
+  outline: 0;
+  background-color: orangered;
+  border-radius: 3px;
+  font-weight: bolder;
+  padding: 15px;
+}
+#usesofPINCertificates {
+  height: 150vh;
+  width: 100%;
+  background-image: url(IMG-20250226-WA0018.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#imagecontainerforusesofidentificationimg {
+  width: 35%;
+  height: 65vh;
+  border-radius: 30px;
+  justify-content: space-between;
+  float: left;
+  margin: 5vh 3vw;
+}
+#containers {
+  margin-left: 15vw;
+}
+.container1:hover {
+  transition: 1s;
+  background-image: url(Component\ 52.png);
+}
+.container2:hover {
+  transition: 1s;
+  background-image: url(Component\ 53.png);
+}
+.container3:hover {
+  transition: 1s;
+  background-image: url(Component\ 55.png);
+}
+.container4:hover {
+  transition: 1s;
+  background-image: url(Component\ 54.png);
+}
+.container1 {
+  background-image: linear-gradient(
+      rgba(255, 166, 0, 0.092),
+      rgba(255, 166, 0, 0.103)
+    ),
+    url(Component\ 52.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+  color: rgba(255, 166, 0, 0.586);
+  transition: 1s;
+}
+.container2 {
+  background-image: linear-gradient(
+      rgba(255, 166, 0, 0.092),
+      rgba(255, 166, 0, 0.103)
+    ),
+    url(Component\ 53.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+}
+.container3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(255, 166, 0, 0.092),
+      rgba(255, 166, 0, 0.103)
+    ),
+    url(Component\ 55.png);
+  border: 0;
+}
+.container4 {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(255, 166, 0, 0.092),
+      rgba(255, 166, 0, 0.103)
+    ),
+    url(Component\ 54.png);
+  background-size: cover;
+  border: 0;
+}
+
+.mates {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #f77b09;
+  margin-bottom: 4rem;
+}
+
+.gates {
+  margin: 0 auto;
+  width: 80%;
+  background-color: white;
+  padding: 3.2rem 6.4rem;
   border-radius: 0.8rem;
 }
 
-.gen a {
+.mate {
+  background-color: #f1f5f4;
+  padding: 10.4rem 0;
+}
+
+.nig {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #366e47;
+  margin-bottom: 2.5rem;
+}
+
+.jets {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #366e47;
+  margin-bottom: 2.5rem;
+}
+
+.got {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #366e47;
+}
+
+.grate {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #f77b09;
+  padding: 6.4rem;
+  background-color: #feecd680;
+  text-align: center;
+}
+
+.form-container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #feecd6bf;
+  padding: 6.4rem 10rem;
+  border-radius: 1.6rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.form-row5 {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"] {
+  padding: 0.7rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  color: #c0c0c0;
+}
+
+/* #file {
+  display: none;
+} */
+
+#label-file {
+  padding: 0.7rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  color: #c0c0c0;
+  border: 1px solid #c0c0c0;
+  background-color: white;
+  cursor: pointer;
+  display: block;
+}
+
+#checks {
+  font-size: 1.6rem;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.generate-btn {
+  background-color: #f77b09;
+  color: white;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1.6rem 9.2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.button {
+  text-align: center;
+}
+
+.small-text {
+  color: #4e4e4e;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 0.2rem;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"] {
+  padding: 0.7rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  color: #c0c0c0;
+  border: none;
+}
+
+/* #file {
+  display: none;
+} */
+
+#label-file {
+  padding: 0.7rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  color: #c0c0c0;
+  border: 1px solid #c0c0c0;
+  background-color: white;
+  cursor: pointer;
+  display: block;
+}
+
+#checks {
+  font-size: 1.6rem;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.generate-btn {
+  background-color: #f77b09;
+  color: white;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1.6rem 9.2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.button {
+  text-align: center;
+}
+
+.small-text {
+  color: #4e4e4e;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 0.2rem;
+}
+
+.birth {
+  background-image: url(Frame\ 1000005929.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10.4rem 0;
+}
+
+footer {
+  background-color: #366e47;
+}
+
+.pop img {
+  margin-bottom: 3.4rem;
+}
+
+.serve {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: white;
+}
+
+#pages {
+  list-style: none;
+}
+
+.pages li a {
   text-decoration: none;
   color: white;
-  background-color: #f77b09;
-  border: 0.5px solid white;
-  padding: 1.2rem 6.5rem;
-  border-radius: 0.8rem;
+  font-size: 1.6rem;
 }
 
-.pen {
+.pages li {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.pg {
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.tel {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.tel a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.fa-solid,
+.fa-regular {
+  color: #f77b09;
+  margin-right: 0.8rem;
+  font-size: 1.6rem;
+}
+
+.cen {
+  display: block;
+  margin-left: 2.5rem;
+}
+
+.tact {
+  color: white;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.mapp {
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 1.6rem;
+}
+
+.tog {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 3.2rem;
-  margin-top: 3.2rem;
+}
+
+.below {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10.4rem;
+  background-image: url(Footer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
 }
