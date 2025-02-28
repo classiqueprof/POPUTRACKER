@@ -969,6 +969,7 @@ footer {
     gap: 3.6rem;
     padding: 0 1rem;
     margin-top: 3.2rem;
+    flex-direction: column;
   }
 
   .language-container {
