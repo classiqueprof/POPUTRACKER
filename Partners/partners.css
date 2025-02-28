@@ -782,6 +782,10 @@ footer {
     font-size: 2.4rem;
   }
 
+  .late {
+    display: inline;
+  }
+
   .ships {
     font-size: 2rem;
     text-align: left;
