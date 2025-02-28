@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   max-width: 1440px;
-  outline: 0;
 }
 
 html {
@@ -775,6 +774,9 @@ footer {
 
 /* Media Query for Very Small Screens (max-width: 480px) */
 @media (max-width: 480px) {
+  * {
+    outline: 1px solid red;
+  }
   .about {
     font-size: 2rem;
   }

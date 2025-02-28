@@ -551,6 +551,10 @@ footer {
   .tog {
     gap: 0rem;
   }
+
+  nav {
+    background-color: transparent;
+  }
 }
 
 /* Media Query for Tablets (min-width: 769px and max-width: 1024px) */
