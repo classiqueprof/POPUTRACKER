@@ -773,10 +773,7 @@ footer {
 }
 
 /* Media Query for Very Small Screens (max-width: 480px) */
-@media (max-width: 480px) {
-  * {
-    outline: 1px solid red;
-  }
+@media screen and (max-width: 480px) {
   .about {
     font-size: 2rem;
   }
