@@ -993,9 +993,17 @@ footer {
     width: 150px;
     height: 233px;
   }
+
+  #submit {
+    width: 28rem;
+  }
 }
 
 @media (max-width: 320px) {
+  #submit {
+    width: 24rem;
+  }
+
   .nav-image {
     text-align: left;
     display: block;

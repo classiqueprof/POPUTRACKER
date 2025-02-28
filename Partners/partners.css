@@ -217,7 +217,7 @@ nav {
 }
 
 .data,
-.join,
+.join1,
 .event,
 .tech {
   color: #366e47;
@@ -271,6 +271,11 @@ nav {
   color: #999999;
   font-size: 2rem;
   font-weight: 600;
+}
+
+.who {
+  background-color: #f1f5f4;
+  padding: 5.5rem 0;
 }
 
 .driven,
@@ -498,4 +503,519 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
+}
+
+/* Media Query for Large Desktops (min-width: 1201px) */
+@media (min-width: 1201px) {
+  .nav-background {
+    height: 600px; /* Increased height for larger screens */
+  }
+
+  .man {
+    padding-top: 8rem;
+  }
+
+  .about {
+    font-size: 3.2rem;
+  }
+
+  .innovate {
+    font-size: 5.4rem;
+  }
+
+  .ship,
+  .why-me,
+  .cap {
+    gap: 6rem;
+  }
+
+  .people1 img {
+    width: 580px;
+  }
+
+  #join {
+    padding: 4.5rem 16rem 4.5rem 10rem;
+  }
+
+  .below {
+    gap: 4rem;
+    height: 600px;
+  }
+}
+
+/* Media Queries for Tablets (min-width: 769px and max-width: 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-image img {
+    width: 90px;
+    height: auto;
+  }
+
+  .ship,
+  .why-me,
+  .cap {
+    gap: 3rem;
+  }
+
+  .people1 img {
+    width: 50%;
+    height: auto;
+  }
+
+  #join {
+    padding: 3rem 10rem;
+  }
+
+  .below {
+    gap: 3rem;
+  }
+}
+
+/* Media Queries for Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    background: #2a4632b2;
+    padding: 1rem;
+  }
+
+  .navbar-list.active {
+    display: flex;
+  }
+
+  .navbar-list li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .dropdown-menu,
+  .sub-menu {
+    position: static;
+    width: 100%;
+    margin: 0;
+    opacity: 1;
+    background: #e1dada;
+    box-shadow: none;
+  }
+
+  .listed a,
+  .listed1 a,
+  .listed2 a,
+  .listed3 a {
+    font-size: 1.4rem;
+    margin: 0;
+    display: block;
+    padding: 0.5rem;
+  }
+
+  .nav-image img {
+    width: 80px;
+    height: auto;
+  }
+
+  .nav-background {
+    height: 300px; /* Reduced height for mobile */
+  }
+
+  .man {
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+
+  .about {
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+
+  .innovate {
+    font-size: 3.2rem; /* Reduced for mobile readability */
+    font-weight: 700;
+  }
+
+  .ship,
+  .why-me,
+  .cap {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .people {
+    display: flex;
+  }
+
+  .ships,
+  .track,
+  .rent,
+  .proud,
+  .network,
+  .tune,
+  .data,
+  .join1,
+  .event,
+  .tech,
+  .share,
+  .team,
+  .host,
+  .visual,
+  .us,
+  .tise,
+  .grow,
+  .reach,
+  .edge,
+  .develop,
+  .global,
+  .with-we,
+  .cate,
+  .mental,
+  .out,
+  .gent,
+  .tie,
+  .uni,
+  .add,
+  .rely,
+  .focus,
+  .seek {
+    text-align: center;
+  }
+
+  .ships {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .track,
+  .proud,
+  .network,
+  .share,
+  .team,
+  .host,
+  .visual,
+  .edge,
+  .develop,
+  .global,
+  .uni,
+  .add,
+  .rely,
+  .focus,
+  .seek {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #999999;
+  }
+
+  .rent,
+  .tune,
+  .us,
+  .with-we {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #366e47;
+  }
+
+  .data,
+  .join1,
+  .event,
+  .tech,
+  .tise,
+  .grow,
+  .reach,
+  .cate,
+  .mental,
+  .out,
+  .gent,
+  .tie {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #366e47;
+  }
+
+  .divine img,
+  .joint img,
+  .extend img,
+  .cap img {
+    width: 40px;
+    height: auto;
+  }
+
+  .people1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 2.4rem;
+  }
+
+  #join {
+    border-radius: 2.4rem;
+    padding: 2rem 1rem;
+  }
+
+  .below {
+    flex-direction: column;
+    height: auto;
+    padding-top: 5rem;
+  }
+
+  .tog {
+    gap: 2rem;
+  }
+
+  nav {
+    background-color: transparent;
+  }
+}
+
+/* Media Query for Very Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .about {
+    font-size: 2rem;
+  }
+
+  .innovate {
+    font-size: 2.4rem;
+  }
+
+  .ships {
+    font-size: 2rem;
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .track {
+    font-size: 1.6rem;
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .rate {
+    display: inline;
+  }
+
+  .org {
+    margin-top: -10rem;
+  }
+
+  .rent {
+    font-size: 2.4rem;
+    padding: 0 1rem;
+    text-align: left;
+  }
+
+  .proud {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    text-align: left;
+  }
+  .network {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    text-align: left;
+  }
+  .share,
+  .team,
+  .host,
+  .visual {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    text-align: left;
+  }
+
+  .edge,
+  .develop,
+  .global {
+    font-size: 1.8rem;
+  }
+  .uni,
+  .add,
+  .rely,
+  .focus,
+  .seek {
+    font-size: 1.6rem;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .cap img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .tune {
+    font-size: 2.4rem;
+    padding: 0 1rem;
+    text-align: left;
+  }
+
+  .us,
+  .with-we {
+    font-size: 2.4rem;
+  }
+
+  .tise,
+  .grow,
+  .reach {
+    font-size: 2.4rem;
+  }
+
+  .cate,
+  .mental,
+  .out,
+  .gent,
+  .tie {
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .join1,
+  .data,
+  .event,
+  .tech {
+    font-size: 2rem;
+    padding: 0 1rem;
+    text-align: left;
+  }
+
+  #fort {
+    display: inline;
+  }
+
+  .form {
+    display: inline;
+  }
+
+  .part {
+    font-size: 1.2rem;
+  }
+
+  .people {
+    display: flex;
+    gap: 0;
+    padding: 0 1rem;
+  }
+
+  .people1 img {
+    width: 150px;
+    height: 220px;
+    border-radius: 2.4rem 0 0 2.4rem;
+  }
+
+  .join {
+    font-size: 1.4rem;
+  }
+
+  .tina a {
+    padding: 0.8rem 3rem;
+    font-size: 1.4rem;
+  }
+
+  #join {
+    text-align: left;
+    padding: 4rem 1rem;
+    border-radius: 0 2.4rem 2.4rem 0;
+  }
+
+  .pop img {
+    width: 110.8px;
+    height: 64px;
+    padding: 0 1rem;
+  }
+
+  .serve {
+    font-size: 1.4rem;
+    margin-top: -2rem;
+    padding: 0 1rem;
+  }
+
+  .below {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-top: 5rem;
+  }
+
+  .map {
+    order: 1;
+    padding: 0 1rem;
+    margin-top: 3.2rem;
+    margin-bottom: 6rem;
+  }
+
+  .tog {
+    gap: 3.6rem;
+    padding: 0 1rem;
+    margin-top: 3.2rem;
+  }
+
+  .language-container {
+    display: none;
+  }
+
+  .nav-image {
+    text-align: left;
+    display: block;
+    margin-top: -12rem;
+    margin-left: -14rem;
+  }
+}
+
+@media (max-width: 360px) {
+  #join {
+    text-align: left;
+    padding: 3.9rem 1rem;
+    border-radius: 0 2.4rem 2.4rem 0;
+  }
+  .people1 img {
+    width: 150px;
+    height: 233px;
+  }
+
+  #submit {
+    width: 28rem;
+  }
+}
+
+@media (max-width: 320px) {
+  #submit {
+    width: 24rem;
+  }
+
+  .nav-image {
+    text-align: left;
+    display: block;
+    margin-top: -12rem;
+    margin-left: -11rem;
+  }
+
+  .tina a {
+    padding: 0.5rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  .map img {
+    width: 302px;
+    height: 214px;
+  }
+
+  #join {
+    text-align: left;
+    padding: 2.1rem 1rem;
+    border-radius: 0 2.4rem 2.4rem 0;
+  }
+
+  .people1 img {
+    width: 150px;
+    height: 240px;
+  }
+
+  .part {
+    font-size: 1rem;
+  }
 }
