@@ -1331,12 +1331,15 @@ footer {
 
   #job,
   #type {
-    height: 8rem;
-    width: 36rem;
+    height: 7rem;
+    width: 30rem;
   }
 
+  .jobs {
+    width: 100%;
+  }
   #submit {
-    padding: 1.6rem 15.7rem;
+    padding: 1.6rem 12.7rem;
   }
 
   .current {
@@ -1363,6 +1366,7 @@ footer {
   .year {
     font-size: 1.6rem;
   }
+
   .analyst {
     flex-direction: row;
     align-items: center;
