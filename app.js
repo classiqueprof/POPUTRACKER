@@ -1,9 +1,9 @@
-const body = document.querySelector("#body");
-const down = document.querySelector("#down");
-const down2 = document.querySelector("#down2");
-const down3 = document.querySelector("#down3");
-const down4 = document.querySelector("#down4");
-const down5 = document.querySelector("#down5");
+// const body = document.querySelector("#body");
+// const down = document.querySelector("#down");
+// const down2 = document.querySelector("#down2");
+// const down3 = document.querySelector("#down3");
+// const down4 = document.querySelector("#down4");
+// const down5 = document.querySelector("#down5");
 const Answertono1 = document.querySelector("#Answertono1");
 const Ans1 = document.querySelector("#Ans1");
 const Ans2 = document.querySelector("#Ans2");
@@ -85,6 +85,7 @@ Fourthquestionbar.onclick = function () {
     Ans4.style.animation = "none";
   }
 };
+
 Fifthquestionbar.onclick = function () {
   if (show) {
     Ans5.style.display = "inherit";

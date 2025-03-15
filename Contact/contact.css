@@ -323,7 +323,7 @@ nav {
 }
 
 .work {
-  background-image: url("images/Frame\ 1000005929.png");
+  background-image: url("assets/Images/Frame\ 1000005929.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -486,7 +486,7 @@ footer {
   }
 
   .innovate {
-    font-size: 3.2rem; /* Reduced for mobile readability */
+    font-size: 3.2rem;
     font-weight: 700;
   }
 
@@ -524,7 +524,7 @@ footer {
   }
 
   #submit {
-    padding: 1rem 6rem; /* Adjusted for mobile width */
+    padding: 1rem 6rem;
   }
 
   .people {
@@ -557,7 +557,6 @@ footer {
   }
 }
 
-/* Media Query for Tablets (min-width: 769px and max-width: 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .nav-image img {
     width: 90px;
@@ -638,7 +637,6 @@ footer {
   }
 }
 
-/* Additional Media Query for Very Small Screens (max-width: 480px) */
 @media (max-width: 480px) {
   .about {
     font-size: 2rem;
