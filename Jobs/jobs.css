@@ -1331,13 +1331,14 @@ footer {
 
   #job,
   #type {
-    height: 7rem;
+    height: 6rem;
     width: 30rem;
   }
 
   .jobs {
     width: 100%;
   }
+
   #submit {
     padding: 1.6rem 12.7rem;
   }
@@ -1389,6 +1390,7 @@ footer {
 
   .now a {
     padding: 1rem 2rem;
+    font-size: 1.6rem;
   }
 
   .now {
@@ -1432,14 +1434,14 @@ footer {
   }
 
   .peoples img {
-    width: 150px;
-    height: 232px;
+    width: 100%;
+    height: auto;
     border-radius: 2.4rem 0 0 2.4rem;
   }
 
   .how {
     text-align: left;
-    padding: 2.7rem 1rem;
+    padding: 1rem 1rem;
     border-radius: 0 2.4rem 2.4rem 0;
   }
 
@@ -1448,12 +1450,12 @@ footer {
   }
 
   .steps {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0;
   }
 
   .link a {
-    padding: 1rem 1rem;
+    padding: 0.5rem;
     font-size: 1.2rem;
   }
 
@@ -1505,15 +1507,33 @@ footer {
     text-align: left;
     display: block;
     margin-top: -6rem;
-    margin-left: -26rem;
+    margin-left: -25rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .peoples img {
+    width: 150px;
+    height: 205px;
+    border-radius: 2.4rem 0 0 2.4rem;
+  }
+
+  #job,
+  #type {
+    height: 6rem;
+    width: 25rem;
+  }
+
+  .jobs {
+    width: 100%;
+  }
+
+  #submit {
+    padding: 1.6rem 10rem;
   }
 }
 
 @media (max-width: 320px) {
-  #submit {
-    width: 24rem;
-  }
-
   .nav-image {
     text-align: left;
     display: block;
@@ -1531,7 +1551,7 @@ footer {
   }
 
   #submit {
-    padding: 1.6rem 15rem;
+    padding: 1.6rem 7.5rem;
   }
 
   .lyst,
