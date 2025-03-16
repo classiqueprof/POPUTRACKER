@@ -1,9 +1,20 @@
-// const body = document.querySelector("#body");
-// const down = document.querySelector("#down");
-// const down2 = document.querySelector("#down2");
-// const down3 = document.querySelector("#down3");
-// const down4 = document.querySelector("#down4");
-// const down5 = document.querySelector("#down5");
+"use strict";
+
+const PINmobile = document.querySelector(".PINmobile");
+const menucontainer2 = document.querySelector("#pincontainer");
+
+let showmobile = true;
+
+PINmobile.onclick = function () {
+  if (showmobile) {
+    menucontainer2.style.display = "inherit";
+    showmobile = false;
+  } else {
+    menucontainer2.style.display = "none";
+    showmobile = true;
+  }
+};
+
 const Answertono1 = document.querySelector("#Answertono1");
 const Ans1 = document.querySelector("#Ans1");
 const Ans2 = document.querySelector("#Ans2");
@@ -34,6 +45,7 @@ Firstquestionbar.onclick = function () {
     Ans1.style.animation = "none";
   }
 };
+
 Secondquestionbar.onclick = function () {
   if (show) {
     Ans2.style.display = "inherit";
@@ -51,6 +63,7 @@ Secondquestionbar.onclick = function () {
     Ans2.style.animation = "none";
   }
 };
+
 Thirdquestionbar.onclick = function () {
   if (show) {
     Ans3.style.display = "inherit";
@@ -68,6 +81,7 @@ Thirdquestionbar.onclick = function () {
     Ans3.style.animation = "none";
   }
 };
+
 Fourthquestionbar.onclick = function () {
   if (show) {
     Ans4.style.display = "inherit";
@@ -102,4 +116,26 @@ Fifthquestionbar.onclick = function () {
     down5.style.transform = "rotateX(0deg)";
     Ans5.style.animation = "none";
   }
+};
+
+const menucontainer1 = document.querySelector("#menucontainer");
+const menubar = document.querySelector("#menubar");
+const exit = document.querySelector("#menubar2");
+
+exit.style.display = "none";
+
+let menutoggle = true;
+menubar.onclick = function () {
+  if (menutoggle) {
+    menucontainer1.style.visibility = "visible";
+    menutoggle = false;
+    menubar.style.display = "none";
+    exit.style.display = "inherit";
+  }
+};
+exit.onclick = function () {
+  menucontainer1.style.visibility = "hidden";
+  menutoggle = true;
+  menubar.style.display = "inherit";
+  exit.style.display = "none";
 };

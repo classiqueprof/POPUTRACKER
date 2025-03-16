@@ -7,18 +7,17 @@
 }
 body {
   font-family: "Manrope", serif;
-  /* animation: bg 5s reverse ease-in 1; */
 }
-/* @keyframes bg {
-  100% {
-    background-color: rgba(144, 238, 144, 0.499);
-  }
-} */
+
 html {
   font-size: 62.5%;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
-  text-decoration: none;
+}
+#menubar,
+#menubar2 {
+  display: none;
+}
+#menucontainer {
+  display: none;
 }
 
 .language-bar {
@@ -193,10 +192,10 @@ nav li:hover .sub-menu {
 }
 
 .about {
-  font-size: 2.4rem;
-  font-weight: 500;
-  color: #f77b09;
-  margin: 0;
+  font-size: 5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.6rem;
   text-align: center;
 }
 
@@ -205,15 +204,10 @@ nav li:hover .sub-menu {
 }
 
 .innovate {
-  font-size: 4.4rem;
+  font-size: 3.6rem;
   font-weight: 700;
   color: white;
   margin: 0;
-}
-
-.man {
-  text-align: center;
-  padding-top: 5rem;
 }
 
 .nav-background {
@@ -221,7 +215,7 @@ nav li:hover .sub-menu {
   top: 0;
   left: 0;
   width: 100%;
-  height: 500px;
+  height: 600px;
   z-index: -1;
 }
 
@@ -241,6 +235,48 @@ nav li:hover .sub-menu {
 
 .man {
   margin-top: 6rem;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.ploy a {
+  color: white;
+  border: 1px solid #c0c0c0;
+  padding: 1.4rem 6.2rem;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.ploy a:hover {
+  background-color: #f77b09;
+  transition: ease-in-out 1s;
+}
+
+.gpin a:hover {
+  background-color: #d06c0f;
+  transition: ease-in-out 1s;
+}
+
+.gpin a {
+  color: white;
+  background-color: #f77b09;
+  padding: 1.4rem 4.2rem;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.ploy,
+.gpin {
+  margin-top: 3rem;
+}
+
+.plo-rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
 }
 
 #countrycode {
@@ -254,76 +290,17 @@ nav li:hover .sub-menu {
   text-shadow: 1px 0px black;
   color: white;
 }
-#languagebtn {
-  width: 8rem;
-  border-radius: 20px;
-  border: 0;
-  float: right;
-  margin-right: 5vw;
-  margin-top: 2vh;
-  padding: 5px;
-}
-#languageimg {
-  float: left;
-  height: 15px;
-  width: 15px;
-}
-#deep-drop-down {
-  color: orange;
-}
-#homelink {
-  text-decoration: underline;
-  text-decoration-color: rgb(255, 128, 0);
-  text-decoration-thickness: 4px;
-}
 
-#pinoption {
-  background-color: white;
-  height: 25vh;
-  width: 23vw;
-  position: absolute;
-  float: left;
-  margin-left: 30vw;
-}
-#pinoptionbtn,
-#pinoptionbtndrop {
-  width: 100%;
-  border: 1px solid green;
-  padding: 17px;
-  border-left: hidden;
-  border-right: hidden;
-  border-top: hidden;
-  text-align: left;
-  color: green;
-  font-size: 1.6rem;
-}
-#pinoption {
-  visibility: hidden;
-  opacity: 0;
-}
-#pinoptionbtn:hover {
-  color: rgb(255, 115, 0);
-  transition: 0.4s;
-}
-#record-options {
-  height: 35vh;
-  width: 53vh;
-  background-color: white;
-  position: absolute;
-  float: left;
-  margin-left: 53vw;
-  opacity: 0;
-  margin-top: 18.5vh;
-  visibility: hidden;
-}
 #populationclock {
   height: 160vh;
   background-color: rgba(169, 169, 169, 0.217);
   color: black;
 }
+
 #populationclockheader {
   font-size: 3rem;
 }
+
 #popu-clock {
   background-image: url(Frame\ 1000006284.png);
   width: 97vw;
@@ -331,6 +308,7 @@ nav li:hover .sub-menu {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 #popuclockdisplay {
   padding: 1vh;
   background-color: transparent;
@@ -342,22 +320,26 @@ nav li:hover .sub-menu {
   border: 6px solid lightgray;
   font-size: 3rem;
 }
+
 #countrypopulation {
   height: 16.4vw;
   width: 48%;
   background-color: transparent;
   float: left;
 }
+
 #Worldpopulation {
   height: 16.4vw;
   width: 51%;
   background-color: transparent;
   float: right;
 }
+
 h2 {
   font-size: 2.6rem;
   color: white;
 }
+
 #Nigeriadigit {
   height: 12vh;
   width: 4vw;
@@ -368,6 +350,7 @@ h2 {
   border: 0;
   margin-top: 10vh;
 }
+
 #worlddigit {
   height: 12vh;
   width: 4vw;
@@ -378,54 +361,33 @@ h2 {
   border: 0;
   margin-top: 10vh;
 }
+
 #NigeriaPopulationNumbers {
   font-size: 5rem;
   color: white;
 }
+
 #worldPopulationNumbers {
   font-size: 5rem;
   color: white;
 }
 marquee {
-  /* backdrop-filter: blur(1px); */
+  backdrop-filter: blur(1px);
 }
-#poputrackerimg {
-  height: 40px;
-  width: 40px;
-  float: left;
-  margin-left: -3vw;
-  position: absolute;
-}
-button {
-  cursor: pointer;
-}
-#poputracker {
-  font-weight: bolder;
-}
-#poputracker:hover {
-  text-decoration: none;
-  opacity: inherit;
-}
-.btn {
-  animation: btn 1.3s linear alternate-reverse 3;
-  animation-delay: 2.5s;
-}
-@keyframes btn {
-  100% {
-    transform: scale(1.2);
-  }
-}
+
 #populationrateschangesndcountrytop {
   height: 53vh;
   width: 95%;
   background-color: whitesmoke;
 }
+
 #componentofpopulationchange {
   height: 53vh;
   width: 47%;
   float: left;
   background-color: whitesmoke;
 }
+
 #topmostpopulouscountries {
   float: right;
   width: 47%;
@@ -434,11 +396,13 @@ button {
   margin-right: 5.5vw;
   margin-top: -53vh;
 }
+
 h3 {
   font-size: 1.8rem;
   text-align: left;
   margin-left: 1vw;
 }
+
 #populationrangelist {
   width: 100%;
   background-color: transparent;
@@ -446,12 +410,14 @@ h3 {
   color: black;
   font-size: 1.6rem;
 }
+
 #range1 {
   justify-content: space-between;
   float: left;
   margin-left: 1vw;
   margin-top: 0.5vh;
 }
+
 #rangebar {
   width: 11vw;
   padding: 0.1vh;
@@ -460,6 +426,7 @@ h3 {
   margin-top: 1vh;
   margin-right: 1vw;
 }
+
 #rangebtn {
   width: 80%;
   padding: 1.6vh;
@@ -467,6 +434,7 @@ h3 {
   float: left;
   background-color: skyblue;
 }
+
 #rangebtn4 {
   width: 30%;
   padding: 1.6vh;
@@ -474,6 +442,7 @@ h3 {
   float: left;
   background-color: skyblue;
 }
+
 #rangebtn3 {
   width: 40%;
   padding: 1.6vh;
@@ -481,6 +450,7 @@ h3 {
   float: left;
   background-color: skyblue;
 }
+
 #rangebtn2 {
   width: 50%;
   padding: 1.6vh;
@@ -488,6 +458,7 @@ h3 {
   float: left;
   background-color: skyblue;
 }
+
 #countery1-5 {
   float: left;
   margin-left: 0.5vw;
@@ -499,6 +470,7 @@ h3 {
   border-right: hidden;
   height: 37vh;
 }
+
 #countery6-10 {
   float: right;
   width: 46%;
@@ -512,11 +484,13 @@ h3 {
   border: 0;
   outline: 0;
 }
+
 #countrytotal {
   background-color: transparent;
   border: 0;
   outline: 0;
 }
+
 #Nigerianpastpopulation {
   width: 90%;
   height: 20vh;
@@ -531,6 +505,7 @@ h3 {
   margin-top: 2vh;
   width: 60px;
 }
+
 #ngdatetext {
   float: right;
   font-size: 2rem;
@@ -546,9 +521,11 @@ h3 {
   margin-left: -38vw;
   background-color: gray;
 }
+
 #ngabtn {
   float: right;
 }
+
 #ngabtn,
 #ngabtn1 {
   justify-content: space-between;
@@ -560,16 +537,19 @@ h3 {
   border: 0;
   outline: 0;
 }
+
 #right {
   height: 20px;
   width: 25px;
   margin-right: 2vw;
 }
+
 #right2 {
   height: 25px;
   width: 25px;
   float: right;
 }
+
 #populousstatesanddensity {
   height: 120vh;
   background-color: rgba(128, 128, 128, 0.122);
@@ -582,6 +562,7 @@ h3 {
   float: right;
   margin-top: -3vh;
 }
+
 #ngbtn {
   padding: 2px;
   font-weight: bolder;
@@ -591,6 +572,7 @@ h3 {
   background-color: transparent;
   float: left;
 }
+
 #learnmoreanddownoad2 {
   width: 20vw;
   height: 5vh;
@@ -598,6 +580,7 @@ h3 {
   justify-content: space-between;
   float: left;
 }
+
 #ngbtn2 {
   padding: 2px;
   font-weight: bolder;
@@ -609,23 +592,28 @@ h3 {
   float: left;
   margin-left: 2vw;
 }
+
 #chevron-right {
   color: orange;
   font-size: 30px;
   margin-right: 8vw;
 }
+
 #download-icon {
   color: orange;
   font-size: 30px;
 }
+
 #chevron-right2 {
   color: orange;
   font-size: 30px;
 }
+
 #download-icon2 {
   color: orange;
   font-size: 30px;
 }
+
 #mostpopulousstatecontainer {
   height: 96vh;
   border-radius: 10px;
@@ -634,6 +622,7 @@ h3 {
   width: 44%;
   background-color: white;
 }
+
 #mostpopulousstatecontainer2 {
   height: 96vh;
   border-radius: 10px;
@@ -642,6 +631,7 @@ h3 {
   width: 44%;
   background-color: white;
 }
+
 #highdensity {
   height: 90vh;
   border-radius: 10px;
@@ -650,14 +640,17 @@ h3 {
   width: 44%;
   background-color: white;
 }
+
 h5 {
   color: black;
   font-size: 3rem;
   margin: 2vh 2vw;
 }
+
 #generate {
   float: right;
 }
+
 #topic {
   padding: 17px;
   width: 33%;
@@ -666,6 +659,7 @@ h5 {
   background-color: transparent;
   font-size: 2.8rem;
 }
+
 #topic:first-of-type {
   border-left: hidden;
   border-right: hidden;
@@ -674,31 +668,38 @@ h5 {
   text-decoration-color: rgba(255, 68, 0, 0.487);
   text-decoration-thickness: 4px;
 }
+
 #topic:last-child {
   border-right: hidden;
   border-left: hidden;
 }
+
 #states-population {
   width: 100%;
   height: 15vh;
   background-color: rgba(128, 128, 128, 0.699);
 }
+
 #statetotal2025-2 {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.123);
   height: 5vh;
 }
+
 #statetotal2025 {
   width: 100%;
   background-color: transparent;
   height: 5vh;
 }
+
 .state2025 {
   float: left;
 }
+
 .total2025-2 {
   float: right;
 }
+
 #T2025btn {
   background-color: transparent;
   color: royalblue;
@@ -708,22 +709,27 @@ h5 {
   width: 3vw;
   font-size: 1.8rem;
 }
+
 #nigeriapopuationbyage {
   height: 180vh;
   background-color: lightgray;
 }
+
 #nigeriapopulationbysex {
   width: 95%;
   height: 20vh;
   border-radius: 20px;
   background-color: whitesmoke;
 }
+
 #text {
   float: left;
 }
+
 #textheader-for-population-in-nigeria-by-sex {
   font-size: 3rem;
 }
+
 #gender {
   width: 2rem;
   padding: 14px;
@@ -731,24 +737,29 @@ h5 {
   outline: 0;
   margin-right: 1vw;
 }
+
 #genders {
   float: right;
   margin-right: 35vw;
   margin-top: 4vh;
 }
+
 li {
   font-size: 1.6rem;
   list-style: none;
 }
+
 li:first-of-type {
   margin-right: 1.5vw;
 }
+
 #graph {
   width: 99%;
   height: 125vh;
   background-color: whitesmoke;
   border-radius: 20px;
 }
+
 #graphlength {
   float: left;
   height: 110vh;
@@ -765,17 +776,21 @@ li:first-of-type {
   margin-right: 3vw;
   border: 2px solid gray;
 }
+
 #numbersforlength {
   margin: 1.9vh;
   font-size: 1.9rem;
 }
+
 #bar1 {
   width: 4vw;
   margin-left: 1vw;
 }
+
 #barone {
   width: 50%;
 }
+
 .Male {
   background-color: green;
   border: 0;
@@ -783,6 +798,7 @@ li:first-of-type {
   height: 3.711vh;
   margin: 2.333vh;
 }
+
 .Female {
   background-color: orange;
   outline: 0;
@@ -793,58 +809,72 @@ li:first-of-type {
   border-top: hidden;
   border-bottom: hidden;
 }
+
 #bar2 {
   width: 5vw;
   margin-left: 2vw;
 }
+
 #bartwo {
   float: right;
   width: 60%;
 }
+
 #bar3 {
   width: 6vw;
   margin-left: 2.4vw;
 }
+
 #barthree {
   float: right;
   width: 60%;
 }
+
 #bar4 {
   width: 10vw;
   margin-left: 1.2vw;
 }
+
 #barfour {
   float: right;
   width: 50%;
 }
+
 #bar5 {
   width: 12vw;
   margin-left: 1.2vw;
 }
+
 #barfive {
   float: right;
   width: 50%;
 }
+
 #bar6 {
   width: 14vw;
   margin-left: 1.2vw;
 }
+
 #barsix {
   float: right;
   width: 50%;
 }
+
 #bar7 {
   width: 17vw;
   margin-left: 2.5vw;
 }
+
 #barseven {
   float: right;
   width: 54%;
 }
+
 #bar8 {
   width: 22vw;
   margin-left: 1vw;
 }
+
 #bareight {
   float: right;
   width: 50%;
@@ -854,74 +884,92 @@ li:first-of-type {
   width: 28vw;
   margin-left: 1vw;
 }
+
 #barnine {
   float: right;
   width: 50%;
 }
+
 #bar10 {
   width: 33vw;
   margin-left: 2.3vw;
 }
+
 #barten {
   float: right;
   width: 52%;
 }
+
 #bar11 {
   width: 36vw;
   margin-left: 3.2vw;
 }
+
 #bareleven {
   float: right;
   width: 53%;
 }
+
 #bar12 {
   width: 46vw;
   margin-left: 3.8vw;
 }
+
 #bartwelve {
   float: right;
   width: 53%;
 }
+
 #bar13 {
   width: 55vw;
   margin-left: 4.4vw;
 }
+
 #barthirteen {
   float: right;
   width: 53%;
 }
+
 #bar14 {
   width: 64vw;
   margin-left: 1vw;
 }
+
 #barfourteen {
   float: right;
   width: 50%;
 }
+
 #bar15 {
   width: 74vw;
   margin-left: 4vw;
 }
+
 #barfifteen {
   float: right;
   width: 52%;
 }
+
 #bar16 {
   width: 80vw;
   margin-left: 1vw;
 }
+
 #barsixteen {
   float: right;
   width: 50%;
 }
+
 #bar17 {
   width: 82vw;
   margin-left: 0.9vw;
 }
+
 #barseventeen {
   float: right;
   width: 50%;
 }
+
 #measuringNumbers {
   justify-content: space-between;
   float: left;
@@ -934,16 +982,19 @@ li:first-of-type {
   font-size: 1.9rem;
   margin-top: 2vh;
 }
+
 #birthanddeathrate {
   height: 200vh;
   background-color: gray;
 }
+
 #deathadbirthrategraphcontainer {
   height: 155vh;
   width: 95%;
   background-color: white;
   border-radius: 30px;
 }
+
 #yearbirthdeath {
   height: 145vh;
   width: 34%;
@@ -956,7 +1007,7 @@ li:first-of-type {
 
 .graphs {
   float: right;
-  margin-top: -105rem;
+  margin-top: -104.5rem;
   margin-right: 8rem;
 }
 
@@ -970,9 +1021,11 @@ li:first-of-type {
   float: left;
   margin: 2vh 3.6vw;
 }
+
 #yearbirthdate {
   margin-left: -3vw;
 }
+
 .timeofdeathandbirthrate {
   float: left;
   margin: 2vh 5.2vw;
@@ -980,10 +1033,12 @@ li:first-of-type {
   margin-left: 1vw;
   font-weight: bolder;
 }
+
 #populationidentificationpinnumber {
   height: 130vh;
   background-color: whitesmoke;
 }
+
 #identificationoimg {
   float: left;
   border: 2px solid black;
@@ -1000,6 +1055,7 @@ li:first-of-type {
   border: 0;
   background-size: cover;
 }
+
 #identificationotextdropdown {
   float: right;
   margin-right: 4vw;
@@ -1007,6 +1063,7 @@ li:first-of-type {
   width: 46%;
   border-radius: 10px;
 }
+
 #identificationquestionsdropdownforPIN {
   width: 100%;
   height: 10vh;
@@ -1018,6 +1075,7 @@ li:first-of-type {
   color: darkgreen;
   cursor: pointer;
 }
+
 #PINidentificationheader {
   font-size: 3.6rem;
   color: darkgreen;
@@ -1026,10 +1084,12 @@ li:first-of-type {
   margin-left: 2vw;
   margin-top: -1vh;
 }
+
 #chevondown {
   float: right;
   margin-right: 3vh;
 }
+
 #Ans1,
 #Ans2,
 #Ans3,
@@ -1048,22 +1108,25 @@ li:first-of-type {
   display: none;
   animation: none;
 }
+
 @keyframes ans1 {
   100% {
     transform: translateY(-40px);
     opacity: 0;
   }
 }
+
 #learnmoreaboutpinbtn {
   width: 20vw;
   color: white;
   border: 0;
   outline: 0;
-  background-color: orangered;
-  border-radius: 3px;
+  background-color: #f77b09;
+  border-radius: 0.8rem;
   font-weight: bolder;
-  padding: 15px;
+  padding: 1.5rem;
 }
+
 #usesofPINCertificates {
   height: 150vh;
   width: 100%;
@@ -1071,6 +1134,7 @@ li:first-of-type {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 #imagecontainerforusesofidentificationimg {
   width: 35%;
   height: 65vh;
@@ -1079,25 +1143,31 @@ li:first-of-type {
   float: left;
   margin: 5vh 3vw;
 }
+
 #containers {
   margin-left: 15vw;
 }
+
 .container1:hover {
   transition: 1s;
   background-image: url(Component\ 52.png);
 }
+
 .container2:hover {
   transition: 1s;
   background-image: url(Component\ 53.png);
 }
+
 .container3:hover {
   transition: 1s;
   background-image: url(Component\ 55.png);
 }
+
 .container4:hover {
   transition: 1s;
   background-image: url(Component\ 54.png);
 }
+
 .container1 {
   background-image: linear-gradient(
       rgba(255, 166, 0, 0.092),
@@ -1110,6 +1180,7 @@ li:first-of-type {
   color: rgba(255, 166, 0, 0.586);
   transition: 1s;
 }
+
 .container2 {
   background-image: linear-gradient(
       rgba(255, 166, 0, 0.092),
@@ -1120,6 +1191,7 @@ li:first-of-type {
   background-size: cover;
   border: 0;
 }
+
 .container3 {
   background-repeat: no-repeat;
   background-size: cover;
@@ -1182,12 +1254,16 @@ li:first-of-type {
 }
 
 .grate {
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: 700;
   color: #f77b09;
   padding: 6.4rem;
   background-color: #feecd680;
   text-align: center;
+}
+
+.eden {
+  display: block;
 }
 
 .form-container {
@@ -1279,32 +1355,6 @@ input[type="tel"] {
   font-size: 1.2rem;
   font-weight: 500;
   margin-top: 0.2rem;
-}
-
-input[type="text"],
-input[type="date"],
-input[type="email"],
-input[type="tel"] {
-  padding: 0.7rem;
-  border-radius: 0.8rem;
-  font-size: 1.6rem;
-  color: #c0c0c0;
-  border: none;
-}
-
-/* #file {
-  display: none;
-} */
-
-#label-file {
-  padding: 0.7rem;
-  border-radius: 0.8rem;
-  font-size: 1.6rem;
-  color: #c0c0c0;
-  border: 1px solid #c0c0c0;
-  background-color: white;
-  cursor: pointer;
-  display: block;
 }
 
 #checks {
@@ -1400,7 +1450,7 @@ footer {
 
 .fa-solid,
 .fa-regular {
-  color: #f77b09;
+  color: #366e47;
   margin-right: 0.8rem;
   font-size: 1.6rem;
 }
@@ -1437,4 +1487,630 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .form-container {
+    padding: 4.8rem 5rem;
+  }
+
+  #identificationoimg {
+    height: 60vh;
+  }
+
+  #imagecontainerforusesofidentificationimg {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 992px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .navbar-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .listed a,
+  .listed1 a,
+  .listed2 a,
+  .listed3 a {
+    margin: 0.5rem 1rem;
+  }
+
+  .dropdown-menu,
+  .sub-menu {
+    position: static;
+    width: 100%;
+    margin: 0;
+  }
+
+  .sub-menu {
+    margin-left: 0;
+    padding-left: 2rem;
+  }
+
+  .arrow {
+    margin-left: 2rem;
+  }
+
+  .innovate {
+    font-size: 3.8rem;
+  }
+
+  #popu-clock {
+    height: 50vh;
+  }
+
+  #countrypopulation,
+  #Worldpopulation {
+    width: 100%;
+    float: none;
+  }
+
+  #Nigeriadigit,
+  #worlddigit {
+    width: 8vw;
+  }
+
+  #populationrateschangesndcountrytop {
+    padding: 1rem;
+  }
+
+  #componentofpopulationchange,
+  #topmostpopulouscountries {
+    float: none;
+    margin: 0;
+  }
+
+  #rangebar {
+    width: 20vw;
+  }
+
+  #imagecontainerforusesofidentificationimg {
+    max-width: 100%;
+  }
+
+  .form-row,
+  .form-row5 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-list.active {
+    display: flex;
+  }
+
+  .listed a,
+  .listed1 a,
+  .listed2 a,
+  .listed3 a {
+    margin: 1rem 0;
+  }
+
+  .innovate {
+    font-size: 3.2rem;
+  }
+
+  .form-container {
+    padding: 3.2rem 2rem;
+  }
+
+  .generate-btn {
+    padding: 1.6rem 6rem;
+  }
+
+  #popuclockdisplay {
+    width: 20vw;
+    font-size: 2rem;
+  }
+
+  #Nigeriadigit,
+  #worlddigit {
+    width: 10vw;
+    height: 8vh;
+    font-size: 2rem;
+  }
+
+  #NigeriaPopulationNumbers,
+  #worldPopulationNumbers {
+    font-size: 4rem;
+  }
+
+  #rangebar {
+    width: 30vw;
+  }
+
+  #T2025btn {
+    font-size: 1.6rem;
+  }
+
+  #identificationoimg {
+    height: 40vh;
+  }
+
+  #learnmoreaboutpinbtn {
+    width: 40vw;
+  }
+
+  .gates {
+    padding: 2rem;
+    width: 90%;
+  }
+
+  .mates,
+  .grate {
+    font-size: 3.2rem;
+  }
+
+  .nig,
+  .jets,
+  .got {
+    font-size: 1.8rem;
+  }
+
+  .tog {
+    flex-direction: row;
+    /* align-items: center; */
+  }
+
+  .below {
+    padding-top: 5rem;
+  }
+
+  nav {
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 480px) {
+  #mobilelink {
+    font-size: 2rem;
+    padding: 10px;
+    color: #366e47;
+  }
+  #menubar,
+  #menubar2 {
+    display: inherit;
+  }
+  #linkss {
+    text-align: center;
+  }
+  #menucontainer {
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    background-color: #366e47;
+    position: absolute;
+    margin-bottom: -50vh;
+    visibility: hidden;
+    display: block;
+  }
+  #pincontainer {
+    height: 30vh;
+    overflow: scroll;
+    width: 100%;
+    overflow: scroll;
+    display: none;
+  }
+  #mobilelink a {
+    text-decoration: none;
+    color: white;
+  }
+  #pinlink {
+    font-size: 2rem;
+    color: white;
+    padding: 10px;
+    backdrop-filter: blur(6px);
+    text-decoration: none;
+  }
+
+  .innovate {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .about {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .late {
+    display: inline;
+  }
+
+  .ploy a {
+    padding: 1.2rem 3rem;
+    font-size: 1.6rem;
+  }
+
+  .gpin a {
+    padding: 1.2rem 2rem;
+    font-size: 1.6rem;
+  }
+
+  .plo-rate {
+    flex-direction: column;
+    margin-top: 6.8rem;
+  }
+
+  #countrycode {
+    width: 18rem;
+    font-size: 1.4rem;
+  }
+
+  .form-container {
+    padding: 2.4rem 1rem;
+  }
+
+  #popu-clock {
+    height: 40vh;
+  }
+
+  #populationclockheader {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  #Nigeriadigit,
+  #worlddigit {
+    width: 12vw;
+    height: 6vh;
+    font-size: 1.8rem;
+  }
+
+  #NigeriaPopulationNumbers,
+  #worldPopulationNumbers {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  #range1 {
+    font-size: 1.4rem;
+  }
+
+  #rangebar {
+    width: 40vw;
+  }
+
+  #ngdatetext {
+    font-size: 1.6rem;
+  }
+
+  #ngbtn {
+    font-size: 1.8rem;
+  }
+
+  h5 {
+    font-size: 2.4rem;
+  }
+
+  #topic {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  #T2025btn {
+    font-size: 1.4rem;
+  }
+
+  #textheader-for-population-in-nigeria-by-sex {
+    font-size: 2.4rem;
+  }
+
+  #PINidentificationheader {
+    font-size: 2.8rem;
+  }
+
+  #identificationquestionsdropdownforPIN {
+    font-size: 1.8rem;
+    height: 8vh;
+  }
+
+  #Ans1,
+  #Ans2,
+  #Ans3,
+  #Ans4,
+  #Ans5 {
+    font-size: 1.4rem;
+  }
+
+  #learnmoreaboutpinbtn {
+    width: 50vw;
+    font-size: 1.6rem;
+  }
+
+  .mates {
+    font-size: 2.8rem;
+  }
+
+  .nig,
+  .jets,
+  .got {
+    font-size: 1.6rem;
+  }
+
+  .ber,
+  .mates {
+    font-size: 2rem;
+  }
+
+  .eden {
+    display: inline;
+  }
+
+  .form-container {
+    padding: 2.4rem 1rem;
+    width: 100%;
+  }
+
+  .birth {
+    margin: 0;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  input[type="tel"],
+  #label-file {
+    font-size: 1.33rem;
+  }
+
+  .generate-btn {
+    padding: 1.6rem 4rem;
+    font-size: 1.33rem;
+  }
+
+  .people1 img {
+    width: 150px;
+    height: 220px;
+  }
+
+  .join {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .part {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .form {
+    display: inline;
+  }
+
+  #join {
+    text-align: left;
+    padding: 4rem 1rem;
+    border-radius: 0 2.4rem 2.4rem 0;
+  }
+
+  .pop img {
+    width: 110.8px;
+    height: 64px;
+    padding: 0 1rem;
+  }
+
+  .serve {
+    font-size: 1.4rem;
+    margin-top: -2rem;
+    padding: 0 1rem;
+  }
+
+  .below {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-top: 5rem;
+  }
+
+  .map {
+    order: 1;
+    padding: 0 1rem;
+    margin-top: 3.2rem;
+    margin-bottom: 6rem;
+  }
+
+  .tog {
+    gap: 3.6rem;
+    padding: 0 1rem;
+    margin-top: 3.2rem;
+  }
+
+  .language-container {
+    display: none;
+  }
+
+  .nav-image {
+    text-align: left;
+    display: block;
+    margin-top: -6rem;
+    margin-left: -25rem;
+  }
+}
+
+@media (max-width: 360px) {
+  #join {
+    text-align: left;
+    padding: 3.9rem 1rem;
+    border-radius: 0 2.4rem 2.4rem 0;
+  }
+  .people1 img {
+    width: 150px;
+    height: 233px;
+  }
+
+  #submit {
+    width: 28rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .innovate {
+    font-size: 2.4rem;
+  }
+
+  .about {
+    font-size: 1.8rem;
+  }
+
+  .ploy a,
+  .gpin a {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+  }
+
+  #countrycode {
+    width: 16rem;
+    font-size: 1.2rem;
+  }
+
+  .form-container {
+    padding: 1.6rem 0.5rem;
+  }
+
+  .generate-btn {
+    padding: 1.2rem 4rem;
+    font-size: 1.6rem;
+  }
+
+  #popuclockdisplay {
+    width: 25vw;
+    font-size: 1.6rem;
+  }
+
+  #Nigeriadigit,
+  #worlddigit {
+    width: 14vw;
+    height: 5vh;
+    font-size: 1.6rem;
+  }
+
+  #NigeriaPopulationNumbers,
+  #worldPopulationNumbers {
+    font-size: 2.4rem;
+  }
+
+  #range1 {
+    font-size: 1.2rem;
+  }
+
+  #rangebar {
+    width: 50vw;
+  }
+
+  #ngdatetext {
+    font-size: 1.4rem;
+  }
+
+  #ngbtn {
+    font-size: 1.6rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  #topic {
+    font-size: 1.8rem;
+    padding: 8px;
+  }
+
+  #T2025btn {
+    font-size: 1.2rem;
+  }
+
+  #textheader-for-population-in-nigeria-by-sex {
+    font-size: 2rem;
+  }
+
+  #PINidentificationheader {
+    font-size: 2.4rem;
+  }
+
+  #identificationquestionsdropdownforPIN {
+    font-size: 1.6rem;
+    height: 6vh;
+  }
+
+  #Ans1,
+  #Ans2,
+  #Ans3,
+  #Ans4,
+  #Ans5 {
+    font-size: 1.2rem;
+  }
+
+  #learnmoreaboutpinbtn {
+    width: 60vw;
+    font-size: 1.4rem;
+  }
+
+  .mates,
+  .grate {
+    font-size: 2.4rem;
+  }
+
+  .nig,
+  .jets,
+  .got {
+    font-size: 1.4rem;
+  }
+
+  #submit {
+    width: 24rem;
+  }
+
+  .nav-image {
+    text-align: left;
+    display: block;
+    margin-top: -6rem;
+    margin-left: -20rem;
+  }
+
+  .tina a {
+    padding: 0.5rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  .map img {
+    width: 302px;
+    height: 214px;
+  }
+
+  #join {
+    text-align: left;
+    padding: 1.5rem 1rem;
+    border-radius: 0 2.4rem 2.4rem 0;
+  }
+
+  .people1 img {
+    width: 150px;
+    height: 240px;
+  }
 }

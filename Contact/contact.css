@@ -12,7 +12,13 @@ html {
 body {
   font-family: "Manrope", serif;
 }
-
+#menucontainer {
+  display: none;
+}
+#menubar,
+#menubar2 {
+  display: none;
+}
 .language-bar {
   background-color: #366e47;
   padding: 0.5rem 0;
@@ -638,6 +644,46 @@ footer {
 }
 
 @media (max-width: 480px) {
+  #mobilelink {
+    font-size: 2rem;
+    padding: 10px;
+    color: #366e47;
+  }
+  #menubar,
+  #menubar2 {
+    display: inherit;
+  }
+  #linkss {
+    text-align: center;
+  }
+  #menucontainer {
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    background-color: #366e47;
+    position: absolute;
+    margin-bottom: -50vh;
+    visibility: hidden;
+    display: block;
+  }
+  #pincontainer {
+    height: 30vh;
+    overflow: scroll;
+    width: 100%;
+    overflow: scroll;
+    display: none;
+  }
+  #mobilelink a {
+    text-decoration: none;
+    color: white;
+  }
+  #pinlink {
+    font-size: 2rem;
+    color: white;
+    padding: 10px;
+    backdrop-filter: blur(6px);
+    text-decoration: none;
+  }
   .about {
     font-size: 2rem;
   }
@@ -731,58 +777,6 @@ footer {
   .part {
     font-size: 1.2rem;
     text-align: left;
-  }
-
-  .form {
-    display: inline;
-  }
-  .people {
-    display: flex;
-    gap: 0;
-    padding: 0 1rem;
-  }
-
-  .tina a {
-    padding: 0.8rem 3rem;
-    font-size: 1.4rem;
-  }
-
-  #join {
-    text-align: left;
-    padding: 4rem 1rem;
-    border-radius: 0 2.4rem 2.4rem 0;
-  }
-
-  .pop img {
-    width: 110.8px;
-    height: 64px;
-    padding: 0 1rem;
-  }
-
-  .serve {
-    font-size: 1.4rem;
-    margin-top: -2rem;
-    padding: 0 1rem;
-  }
-
-  .below {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    padding-top: 5rem;
-  }
-
-  .tog {
-    gap: 3.6rem;
-    padding: 0 1rem;
-    margin-top: 3.2rem;
-  }
-
-  .map {
-    order: 1;
-    padding: 0 1rem;
-    margin-top: 3.2rem;
-    margin-bottom: 6rem;
   }
 
   .language-container {

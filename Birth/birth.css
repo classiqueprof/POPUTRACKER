@@ -384,3 +384,338 @@ footer {
   background-size: cover;
   height: 500px;
 }
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .form-container {
+    padding: 4.8rem 5rem;
+  }
+
+  #join {
+    padding: 4.5rem 8rem 4.5rem 5rem;
+  }
+
+  .people1 img {
+    width: 100%;
+    max-width: 580px;
+    height: auto;
+  }
+
+  .below {
+    padding-top: 5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .navbar-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .listed a,
+  .listed1 a,
+  .listed2 a,
+  .listed3 a {
+    margin: 0.5rem 1rem;
+  }
+
+  .certify {
+    font-size: 4.8rem;
+  }
+
+  .form-row,
+  .form-row5 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  #join {
+    padding: 4.5rem 5rem;
+    border-radius: 2.4rem;
+  }
+
+  .people {
+    flex-direction: column;
+  }
+
+  .people1 img {
+    border-radius: 2.4rem 0 0 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-list.active {
+    display: flex;
+  }
+
+  .listed a,
+  .listed1 a,
+  .listed2 a,
+  .listed3 a {
+    margin: 1rem 0;
+  }
+
+  .man {
+    padding-top: 3rem;
+  }
+
+  .certify {
+    font-size: 4rem;
+  }
+
+  .form-container {
+    padding: 3.2rem 2rem;
+  }
+
+  .generate-btn {
+    padding: 1.6rem 6rem;
+  }
+
+  #join {
+    padding: 3rem 2rem;
+  }
+
+  .join {
+    font-size: 3.2rem;
+  }
+
+  .part {
+    font-size: 1.8rem;
+  }
+
+  .tina a {
+    padding: 1.3rem 4rem;
+  }
+
+  .people {
+    flex-direction: row;
+  }
+
+  .below {
+    flex-direction: column;
+    /* align-items: center; */
+    height: auto;
+    padding: 5rem 1rem;
+  }
+
+  .tog {
+    flex-direction: row;
+    /* align-items: center; */
+  }
+
+  .tog {
+    gap: 0rem;
+  }
+
+  nav {
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 480px) {
+  #fit {
+    display: block;
+  }
+  .certify {
+    font-size: 3.2rem;
+  }
+
+  .form-container {
+    padding: 2.4rem 1rem;
+    width: 100%;
+  }
+
+  .birth {
+    margin: 0;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  input[type="tel"],
+  #label-file {
+    font-size: 1.33rem;
+  }
+
+  .generate-btn {
+    padding: 1.6rem 4rem;
+    font-size: 1.33rem;
+  }
+
+  .join {
+    font-size: 2.8rem;
+  }
+
+  .part {
+    font-size: 1.6rem;
+  }
+
+  .tina a {
+    padding: 1.3rem 2rem;
+  }
+
+  .form {
+    display: inline;
+  }
+
+  .people {
+    gap: 0;
+    padding: 0 1rem;
+  }
+
+  .people1 img {
+    width: 150px;
+    height: 220px;
+  }
+
+  .join {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .part {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .tina a {
+    padding: 0.8rem 3rem;
+    font-size: 1.4rem;
+  }
+
+  #join {
+    text-align: left;
+    padding: 4rem 1rem;
+    border-radius: 0 2.4rem 2.4rem 0;
+  }
+
+  .pop img {
+    width: 110.8px;
+    height: 64px;
+    padding: 0 1rem;
+  }
+
+  .serve {
+    font-size: 1.4rem;
+    margin-top: -2rem;
+    padding: 0 1rem;
+  }
+
+  .below {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-top: 5rem;
+  }
+
+  .tog {
+    gap: 3.6rem;
+    padding: 0 1rem;
+    margin-top: 3.2rem;
+  }
+
+  .map {
+    order: 1;
+    padding: 0 1rem;
+    margin-top: 3.2rem;
+    margin-bottom: 6rem;
+  }
+
+  .language-container {
+    display: none;
+  }
+
+  .nav-image {
+    text-align: left;
+    display: block;
+    margin-top: -6rem;
+    margin-left: -25rem;
+  }
+}
+
+@media (max-width: 360px) {
+  #join {
+    text-align: left;
+    padding: 3.9rem 1rem;
+    border-radius: 0 2.4rem 2.4rem 0;
+  }
+  .people1 img {
+    width: 150px;
+    height: 233px;
+  }
+
+  #submit {
+    width: 28rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .certify {
+    font-size: 2.4rem;
+  }
+
+  .form-container {
+    padding: 1.6rem 0.5rem;
+  }
+
+  .generate-btn {
+    padding: 1.6rem 2rem;
+  }
+
+  .join {
+    font-size: 1.4rem;
+  }
+
+  .part {
+    font-size: 1.4rem;
+  }
+
+  .tina a {
+    padding: 0.5rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  .nav-image {
+    text-align: left;
+    display: block;
+    margin-top: -6rem;
+    margin-left: -20em;
+  }
+
+  .map img {
+    width: 302px;
+    height: 214px;
+  }
+
+  #join {
+    text-align: left;
+    padding: 1.5rem 1rem;
+    border-radius: 0 2.4rem 2.4rem 0;
+  }
+
+  .part {
+    font-size: 1.2rem;
+  }
+
+  .people1 img {
+    width: 150px;
+    height: 240px;
+  }
+}

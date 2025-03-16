@@ -1,5 +1,3 @@
-"use strict";
-
 const PINmobile = document.querySelector(".PINmobile");
 const menucontainer2 = document.querySelector("#pincontainer");
 

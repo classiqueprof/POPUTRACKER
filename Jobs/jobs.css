@@ -12,6 +12,16 @@ html {
 body {
   font-family: "Manrope", serif;
 }
+#menucontainer {
+  display: none;
+}
+#mobilelink a {
+  color: white;
+}
+#menubar,
+#menubar2 {
+  display: none;
+}
 
 .language-bar {
   background-color: #366e47;
@@ -1272,10 +1282,14 @@ footer {
     display: none;
   }
 
+  .people {
+    display: flex;
+  }
+
   .below {
     flex-direction: column;
     height: auto;
-    padding-top: 5rem;
+    padding: 5rem 1rem;
   }
 
   .tog {
@@ -1293,6 +1307,46 @@ footer {
 }
 
 @media (max-width: 480px) {
+  #mobilelink {
+    font-size: 2rem;
+    padding: 10px;
+    color: #366e47;
+  }
+  #menubar,
+  #menubar2 {
+    display: inherit;
+  }
+  #linkss {
+    text-align: center;
+  }
+  #menucontainer {
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    background-color: #366e47;
+    position: absolute;
+    margin-bottom: -50vh;
+    visibility: hidden;
+    display: block;
+  }
+  #pincontainer {
+    height: 30vh;
+    overflow: scroll;
+    width: 100%;
+    overflow: scroll;
+    display: none;
+  }
+  #mobilelink a {
+    text-decoration: none;
+    color: white;
+  }
+  #pinlink {
+    font-size: 2rem;
+    color: white;
+    padding: 10px;
+    backdrop-filter: blur(6px);
+    text-decoration: none;
+  }
   .about {
     font-size: 2rem;
   }
@@ -1337,6 +1391,7 @@ footer {
 
   .jobs {
     width: 100%;
+    padding: 3rem 2rem 3rem 2.5rem;
   }
 
   #submit {

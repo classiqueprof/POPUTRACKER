@@ -12,6 +12,13 @@ html {
 body {
   font-family: "Manrope", serif;
 }
+#menucontainer {
+  display: none;
+}
+#menubar,
+#menubar2 {
+  display: none;
+}
 
 .language-bar {
   background-color: #366e47;
@@ -208,7 +215,6 @@ nav {
   font-weight: 700;
   text-decoration: none;
 }
-
 .tune {
   color: #366e47;
   font-size: 4rem;
@@ -774,6 +780,46 @@ footer {
 
 /* Media Query for Very Small Screens (max-width: 480px) */
 @media screen and (max-width: 480px) {
+  #mobilelink {
+    font-size: 2rem;
+    padding: 10px;
+    color: #366e47;
+  }
+  #menubar,
+  #menubar2 {
+    display: inherit;
+  }
+  #linkss {
+    text-align: center;
+  }
+  #menucontainer {
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    background-color: #366e47;
+    position: absolute;
+    margin-bottom: -50vh;
+    visibility: hidden;
+    display: block;
+  }
+  #pincontainer {
+    height: 30vh;
+    overflow: scroll;
+    width: 100%;
+    overflow: scroll;
+    display: none;
+  }
+  #mobilelink a {
+    text-decoration: none;
+    color: white;
+  }
+  #pinlink {
+    font-size: 2rem;
+    color: white;
+    padding: 10px;
+    backdrop-filter: blur(6px);
+    text-decoration: none;
+  }
   .about {
     font-size: 2rem;
   }
