@@ -1682,10 +1682,103 @@ footer {
 }
 
 @media (max-width: 480px) {
+  #populousstatesanddensity {
+    height: 100vh;
+  }
+  #learnmoreanddownoad2 {
+    width: 100%;
+  }
+  #mostpopulousstatecontainer {
+    width: 100%;
+    transform: scale(1);
+    margin-top: 12vh;
+    margin-left: -1vh;
+  }
+  #mostpopulousstatecontainer2 {
+    transform: scale(1);
+    float: left;
+    width: 100%;
+  }
+  #nigeriapopuationbyage {
+    height: 200vh;
+  }
+  #nigeriapopulationbysex {
+    width: 100%;
+    height: 40vh;
+    border-radius: 0;
+  }
+  #genders {
+    float: left;
+    margin-left: 3vh;
+  }
   #mobilelink {
     font-size: 2rem;
     padding: 10px;
     color: #366e47;
+  }
+  #graphlength {
+    display: flex;
+    width: 70vw;
+    flex-direction: column;
+  }
+  #graphbar {
+    position: absolute;
+    width: 100%;
+    height: 130vh;
+    transform: scale(0.8);
+    border: 0;
+  }
+  #measurment {
+    margin-top: 100vh;
+    width: 100vw;
+    display: none;
+  }
+  #graphimg {
+    margin-top: -50vh;
+  }
+  #yearbirthdeath {
+    width: 100%;
+  }
+  #measuringNumbers {
+  }
+  #barone,
+  #bar1,
+  #bar2,
+  #bartwo,
+  #bar3,
+  #barthree,
+  #bar4,
+  #barfour,
+  #bar5,
+  #barfive,
+  #bar6,
+  #barsix,
+  #bar7,
+  #barseven,
+  #bar8,
+  #bareight,
+  #bar9,
+  #barnine,
+  #barten,
+  #bar10,
+  #bar11,
+  #bareleven,
+  #bar12,
+  #bartwelve,
+  #bar13,
+  #barthirteen,
+  #bar14,
+  #barfourteen,
+  #bar15,
+  #barfifteen,
+  #bar16,
+  #barsixteen,
+  #bar17,
+  #barseventeen {
+    height: 4.3vh;
+  }
+  #graphall {
+    margin-left: 20vw;
   }
   #menubar,
   #menubar2 {
