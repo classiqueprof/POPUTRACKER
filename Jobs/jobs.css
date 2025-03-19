@@ -1174,6 +1174,11 @@ footer {
     margin: 0.5rem 1rem;
   }
 
+  #sub {
+    padding: 1.6rem 2rem;
+    width: 100%;
+  }
+
   .people {
     flex-direction: column;
   }
