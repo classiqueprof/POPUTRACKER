@@ -12,12 +12,15 @@ html {
 body {
   font-family: "Manrope", serif;
 }
+
 #menucontainer {
   display: none;
 }
+
 #mobilelink a {
   color: white;
 }
+
 #menubar,
 #menubar2 {
   display: none;
