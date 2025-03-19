@@ -7,6 +7,123 @@
 body {
   font-family: "Manrope", serif;
 }
+#popuclockcountryandworld {
+  width: 49%;
+  height: 40vh;
+  background-image: url("Frame 1000006284.png");
+  background-size: 1450px;
+  background-repeat: no-repeat;
+  margin-top: 10vh;
+  float: left;
+}
+#ratecountryandpopulation {
+  height: 50vh;
+  width: 32%;
+  background-color: rgba(211, 211, 211, 0.348);
+  float: left;
+  justify-content: space-between;
+  margin-left: 0vw;
+}
+h2 {
+  margin-left: 4vw;
+}
+#ratetxt {
+  height: 10vh;
+  width: 100%;
+  background-color: rgba(211, 211, 211, 0);
+  margin: 2vh 0vw;
+}
+#ratespan {
+  font-size: 1.8rem;
+}
+#ratespace {
+  width: 33%;
+  height: 5vh;
+  float: right;
+  background-color: rgba(211, 211, 211, 0.235);
+}
+#ratebtn {
+  float: left;
+  width: 80%;
+  height: 100%;
+  border-radius: 0;
+  background-color: rgba(65, 105, 225, 0.628);
+  border: 0;
+}
+#ratebtn2 {
+  float: left;
+  width: 70%;
+  height: 100%;
+  border-radius: 0;
+  background-color: rgba(65, 105, 225, 0.628);
+  border: 0;
+}
+#ratebtn3 {
+  float: left;
+  width: 60%;
+  height: 100%;
+  border-radius: 0;
+  background-color: rgba(65, 105, 225, 0.628);
+  border: 0;
+}
+#countryandnumber {
+  background-color: transparent;
+  height: 7vh;
+  width: 100%;
+  margin: 2.3vh 0vw;
+  color: white;
+}
+#each {
+  height: 100%;
+  width: 50%;
+  border: 0;
+  background-color: transparent;
+  font-size: 1.4rem;
+  color: black;
+  justify-content: space-between;
+  float: left;
+}
+#names {
+  margin-left: 3vw;
+  margin-top: 3vh;
+}
+#ratebtn4 {
+  float: left;
+  width: 40%;
+  height: 100%;
+  border-radius: 0;
+  background-color: rgba(65, 105, 225, 0.628);
+  border: 0;
+}
+#popuclockandrate {
+  margin-left: 2vw;
+  height: 120vh;
+}
+#nigeriamapimgandtxt {
+  display: flex;
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+#popunumber {
+  height: 8vh;
+  width: 8%;
+  background-color: whitesmoke;
+  float: left;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: orangered;
+  justify-content: space-between;
+  margin-left: 0.9vw;
+  margin-top: 16vh;
+}
+b {
+  font-size: 10rem;
+  color: white;
+  position: absolute;
+  margin-top: 7vh;
+  margin-left: -0.5vw;
+}
 
 html {
   font-size: 62.5%;
@@ -1684,6 +1801,35 @@ footer {
   #populousstatesanddensity {
     height: 100vh;
   }
+  #popuclockcountryandworld {
+    width: 100%;
+    height: 73vh;
+    float: left;
+    border-radius: 20px;
+    margin-left: -1vw;
+  }
+  #ratecountryandpopulation {
+    background-color: rgba(211, 211, 211, 0.796);
+    float: left;
+    margin-left: -1vw;
+  }
+  .rateandtxtcont {
+    margin-top: -123vh;
+  }
+  #popunumber {
+    height: 5vh;
+    margin-left: 1vw;
+  }
+  #ratecountryandpopulation {
+    width: 100%;
+  }
+  .countrynameandpop {
+    margin-top: -40vh;
+  }
+  b {
+    font-size: 5rem;
+    margin-top: 14vh;
+  }
   #learnmoreanddownoad2 {
     width: 100%;
   }
@@ -1726,6 +1872,7 @@ footer {
     height: 130vh;
     transform: scale(0.8);
     border: 0;
+    margin-top: -15vh;
   }
   #measurment {
     margin-top: 100vh;
@@ -1733,10 +1880,16 @@ footer {
     display: none;
   }
   #graphimg {
-    margin-top: -50vh;
+    margin-top: -65vh;
+    float: right;
+    margin-right: -58vw;
+    transform: scale(0.5);
   }
   #yearbirthdeath {
     width: 100%;
+  }
+  .orange {
+    margin-left: 2vw;
   }
   #measuringNumbers {
   }
@@ -1774,7 +1927,31 @@ footer {
   #barsixteen,
   #bar17,
   #barseventeen {
-    height: 4.3vh;
+    height: 6.3vh;
+  }
+  #barone,
+  #bar1 {
+    width: 10%;
+  }
+  #bartwo,
+  #bar2 {
+    width: 12%;
+  }
+  #barthree,
+  #bar3 {
+    width: 14%;
+  }
+  .total2025-2 {
+    float: right;
+    margin-right: 10vw;
+  }
+  .state2025 {
+    float: left;
+    margin-left: 3vw;
+  }
+  #graph {
+    border-radius: 0;
+    height: 130vh;
   }
   #graphall {
     margin-left: 20vw;
@@ -1824,6 +2001,75 @@ footer {
     font-size: 2.8rem;
     margin-bottom: 2rem;
   }
+  #deathadbirthrategraphcontainer {
+    border: 0;
+    background-color: rgba(128, 128, 128, 0.702);
+    height: 500vh;
+    width: 100%;
+    border-radius: 0;
+  }
+  #identificationoimg {
+    display: none;
+  }
+  #identificationotextdropdown {
+    width: 100%;
+    background-color: white;
+    float: left;
+    margin-top: 9vh;
+  }
+  #identificationquestionsdropdownforPIN {
+    width: 94%;
+    border-radius: 30px;
+  }
+  #questionstextforPIN {
+    margin-left: 4vw;
+  }
+  #populationidentificationpinnumber {
+    margin-top: 50vh;
+    height: 100vh;
+    background-color: white;
+    border-radius: 0;
+  }
+  #yearbirthdate {
+    margin-top: 35vh;
+    float: left;
+    border: 2px solid hidden;
+    justify-content: space-between;
+    margin-left: 17vw;
+  }
+  #yearbirthdeath {
+    height: 180vh;
+    background-color: white;
+    width: 96%;
+    border-radius: 0;
+    border: 0;
+  }
+  #all {
+    float: left;
+    margin-left: 4vw;
+  }
+  #usesofPINCertificates {
+    height: 260vh;
+    background-image: url("Frame 1000006046 (1).png");
+    background-size: cover;
+  }
+  #imagecontainerforusesofidentificationimg {
+    width: 100%;
+    float: left;
+    height: 400px;
+    margin: 6vh -8vw;
+  }
+  .timeofdeathandbirthrate {
+    font-size: 1.6rem;
+  }
+  #year,
+  #birth,
+  #month {
+    height: 3vh;
+    float: left;
+    justify-content: center;
+    margin-left: 7vw;
+  }
 
   .late {
     display: inline;
@@ -1841,7 +2087,7 @@ footer {
 
   .plo-rate {
     flex-direction: column;
-    margin-top: 6rem;
+    margin-top: 5rem;
   }
 
   #countrycode {
