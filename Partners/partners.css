@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  max-width: 1440px;
+  outline: 0;
 }
 
 html {
@@ -12,9 +12,11 @@ html {
 body {
   font-family: "Manrope", serif;
 }
+
 #menucontainer {
   display: none;
 }
+
 #menubar,
 #menubar2 {
   display: none;
