@@ -769,6 +769,10 @@ footer {
     height: 220px;
   }
 
+  .form {
+    display: inline;
+  }
+
   .join {
     font-size: 1.4rem;
     text-align: left;
@@ -781,7 +785,7 @@ footer {
 
   #join {
     text-align: left;
-    padding: 2.1rem 1rem;
+    padding: 4rem 1rem;
     border-radius: 0 2.4rem 2.4rem 0;
   }
 
