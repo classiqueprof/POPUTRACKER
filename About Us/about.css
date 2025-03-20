@@ -964,6 +964,7 @@ footer {
   .form {
     display: inline;
   }
+
   .people {
     display: flex;
     gap: 0;
